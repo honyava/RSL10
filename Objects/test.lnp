@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\rsl10_romvect.o"
+".\objects\rsl10_sys_adc.o"
+".\objects\rsl10_sys_asrc.o"
+".\objects\rsl10_sys_audio.o"
+".\objects\rsl10_sys_clocks.o"
+".\objects\rsl10_sys_crc.o"
+".\objects\rsl10_sys_dma.o"
+".\objects\rsl10_sys_flash.o"
+".\objects\rsl10_sys_power.o"
+".\objects\rsl10_sys_power_modes.o"
+".\objects\rsl10_sys_rffe.o"
+".\objects\rsl10_sys_timers.o"
+".\objects\rsl10_sys_uart.o"
+".\objects\rsl10_sys_version.o"
+".\objects\rsl10_protocol.o"
+".\objects\startup_rsl10.o"
+".\objects\system_rsl10.o"
+".\objects\printf.o"
+".\objects\segger_rtt.o"
+".\objects\segger_rtt_asm_armv7m.o"
+".\objects\segger_rtt_printf.o"
+--library_type=microlib --strict --scatter ".\RTE\Device\RSL10\sections.sct"
+--show_full_path --show_parent_lib --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\test.map" -o .\Objects\test.axf

@@ -1,0 +1,927 @@
+Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
+
+==============================================================================
+
+Section Cross References
+
+    .\objects\main.o(.ARM.exidx.text.Initialize) refers to .\objects\main.o(.text.Initialize) for [Anonymous Symbol]
+    .\objects\main.o(.text.main) refers to .\objects\main.o(.text.Initialize) for Initialize
+    .\objects\main.o(.ARM.exidx.text.main) refers to .\objects\main.o(.text.main) for [Anonymous Symbol]
+    .\objects\rsl10_romvect.o(.ARM.exidx.text.Sys_BootROM_StrictStartApp) refers to .\objects\rsl10_romvect.o(.text.Sys_BootROM_StrictStartApp) for [Anonymous Symbol]
+    .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) for Sys_ADC_GetOffsetAndGain
+    .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_GetGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetGain) for [Anonymous Symbol]
+    .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) refers to .\objects\rsl10_sys_adc.o(.rodata.cst8) for .L__const.Sys_ADC_GetOffsetAndGain.validTargets
+    .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ReadNVR4) for Sys_ReadNVR4
+    .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_GetOffsetAndGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) for [Anonymous Symbol]
+    .\objects\rsl10_sys_adc.o(.text.Sys_ADC_CalibratedConfig) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) for Sys_ADC_GetOffsetAndGain
+    .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_CalibratedConfig) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_CalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ReadNVR4) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ReadNVR4) for [Anonymous Symbol]
+    .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_GetTrim) refers to .\objects\rsl10_sys_adc.o(.text.Sys_GetTrim) for [Anonymous Symbol]
+    .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_ConfigRunTime) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(ldiv.o)(.text) for __aeabi_ldivmod
+    .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_ConfigRunTime) refers to .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_Config) for Sys_ASRC_Config
+    .\objects\rsl10_sys_asrc.o(.ARM.exidx.text.Sys_ASRC_ConfigRunTime) refers to .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_ConfigRunTime) for [Anonymous Symbol]
+    .\objects\rsl10_sys_asrc.o(.ARM.exidx.text.Sys_ASRC_Config) refers to .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_Config) for [Anonymous Symbol]
+    .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfigMult) refers to .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfig) for Sys_Audio_ODDIOConfig
+    .\objects\rsl10_sys_audio.o(.ARM.exidx.text.Sys_Audio_ODDIOConfigMult) refers to .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfigMult) for [Anonymous Symbol]
+    .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfig) refers to .\objects\rsl10_sys_audio.o(.text.Sys_DIO_Config) for Sys_DIO_Config
+    .\objects\rsl10_sys_audio.o(.ARM.exidx.text.Sys_Audio_ODDIOConfig) refers to .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_audio.o(.ARM.exidx.text.Sys_DIO_Config) refers to .\objects\rsl10_sys_audio.o(.text.Sys_DIO_Config) for [Anonymous Symbol]
+    .\objects\rsl10_sys_clocks.o(.text.Sys_Clocks_Osc32kCalibratedConfig) refers to .\objects\rsl10_sys_clocks.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_clocks.o(.ARM.exidx.text.Sys_Clocks_Osc32kCalibratedConfig) refers to .\objects\rsl10_sys_clocks.o(.text.Sys_Clocks_Osc32kCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_clocks.o(.ARM.exidx.text.Sys_GetTrim) refers to .\objects\rsl10_sys_clocks.o(.text.Sys_GetTrim) for [Anonymous Symbol]
+    .\objects\rsl10_sys_clocks.o(.text.Sys_Clocks_OscRCCalibratedConfig) refers to .\objects\rsl10_sys_clocks.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_clocks.o(.ARM.exidx.text.Sys_Clocks_OscRCCalibratedConfig) refers to .\objects\rsl10_sys_clocks.o(.text.Sys_Clocks_OscRCCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_crc.o(.text.Sys_CRC_Check) refers to .\objects\rsl10_sys_crc.o(.text.Sys_CRC_Calc) for Sys_CRC_Calc
+    .\objects\rsl10_sys_crc.o(.ARM.exidx.text.Sys_CRC_Check) refers to .\objects\rsl10_sys_crc.o(.text.Sys_CRC_Check) for [Anonymous Symbol]
+    .\objects\rsl10_sys_crc.o(.ARM.exidx.text.Sys_CRC_Calc) refers to .\objects\rsl10_sys_crc.o(.text.Sys_CRC_Calc) for [Anonymous Symbol]
+    .\objects\rsl10_sys_dma.o(.ARM.exidx.text.Sys_DMA_ChannelConfig) refers to .\objects\rsl10_sys_dma.o(.text.Sys_DMA_ChannelConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_flash.o(.ARM.exidx.text.Sys_Flash_Copy) refers to .\objects\rsl10_sys_flash.o(.text.Sys_Flash_Copy) for [Anonymous Symbol]
+    .\objects\rsl10_sys_flash.o(.ARM.exidx.text.Sys_Flash_Compare) refers to .\objects\rsl10_sys_flash.o(.text.Sys_Flash_Compare) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_BandGapCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_BandGapCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_BandGapCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_GetTrim) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDRFCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDRFCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDRFCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDPACalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDPACalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDPACalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDCCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDCCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDCCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDCStandbyCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDCStandbyCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDCStandbyCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDMCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDMCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDMCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDMStandbyCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDMStandbyCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDMStandbyCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power.o(.text.Sys_Power_DCDCCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_DCDCCalibratedConfig) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_DCDCCalibratedConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_ClearChannelStatus) for Sys_DMA_ClearChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1) for rf_registers_image_1
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init) refers to .\objects\rsl10_sys_dma.o(.text.Sys_DMA_ChannelConfig) for Sys_DMA_ChannelConfig
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_Get_ChannelStatus) for Sys_DMA_Get_ChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.restore_2Mbps_bank) for restore_2Mbps_bank
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Sleep_Init) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_DMA_ClearChannelStatus) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_ClearChannelStatus) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_DMA_Get_ChannelStatus) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_Get_ChannelStatus) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_ClearChannelStatus) for Sys_DMA_ClearChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1) for rf_registers_image_1
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_dma.o(.text.Sys_DMA_ChannelConfig) for Sys_DMA_ChannelConfig
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_Get_ChannelStatus) for Sys_DMA_Get_ChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x1C_0x6F) for rf_registers_image_2_0x1C_0x6F
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x06_0x07) for rf_registers_image_2_0x06_0x07
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x08) for rf_registers_image_2_0x08
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x9F) for rf_registers_image_2_0x9F
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.restore_2Mbps_bank) for restore_2Mbps_bank
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Sleep_Init_2Mbps) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Continue_Application) refers to .\objects\rsl10_sys_power_modes.o(.text.Continue_Application) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep) refers to .\objects\rsl10_sys_power_modes.o(.bss.bb_registers_image) for bb_registers_image
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep) refers to .\objects\rsl10_sys_power_modes.o(.bss.restore_2Mbps_bank) for restore_2Mbps_bank
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep) refers to .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) for Sys_PowerModes_Wakeup_2Mbps
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep) refers to .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup) for Sys_PowerModes_Wakeup
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep) refers to .\objects\rsl10_sys_power_modes.o(.text.Continue_Application) for Continue_Application
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.sys_powermodes_sleep) refers to .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\startup_rsl10.o(RESET) for ISR_Vector_Table
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1) for rf_registers_image_1
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.bb_registers_image) for bb_registers_image
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x06_0x07) for rf_registers_image_2_0x06_0x07
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x08) for rf_registers_image_2_0x08
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x9F) for rf_registers_image_2_0x9F
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x1C_0x6F) for rf_registers_image_2_0x1C_0x6F
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.sys_powermodes_wakeup_2mbps) refers to .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup) refers to .\objects\startup_rsl10.o(RESET) for ISR_Vector_Table
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1) for rf_registers_image_1
+    .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.bb_registers_image) for bb_registers_image
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.sys_powermodes_wakeup) refers to .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Sleep_WakeupFromFlash) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_WakeupFromFlash) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_ClearChannelStatus) for Sys_DMA_ClearChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1) for rf_registers_image_1
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_dma.o(.text.Sys_DMA_ChannelConfig) for Sys_DMA_ChannelConfig
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_Get_ChannelStatus) for Sys_DMA_Get_ChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x1C_0x6F) for rf_registers_image_2_0x1C_0x6F
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x06_0x07) for rf_registers_image_2_0x06_0x07
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x08) for rf_registers_image_2_0x08
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x9F) for rf_registers_image_2_0x9F
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Standby_Init) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby) refers to .\objects\rsl10_sys_power_modes.o(.text.__NVIC_ClearPendingIRQ) for __NVIC_ClearPendingIRQ
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby) refers to .\objects\rsl10_sys_power_modes.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Standby) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.__NVIC_ClearPendingIRQ) refers to .\objects\rsl10_sys_power_modes.o(.text.__NVIC_ClearPendingIRQ) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to .\objects\rsl10_sys_power_modes.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_ClearChannelStatus) for Sys_DMA_ClearChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1) for rf_registers_image_1
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_dma.o(.text.Sys_DMA_ChannelConfig) for Sys_DMA_ChannelConfig
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_Get_ChannelStatus) for Sys_DMA_Get_ChannelStatus
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x06_0x07) for rf_registers_image_2_0x06_0x07
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x08) for rf_registers_image_2_0x08
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x9F) for rf_registers_image_2_0x9F
+    .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x1C_0x6F) for rf_registers_image_2_0x1C_0x6F
+    .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Standby_Wakeup) refers to .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_ReadNVR4) for Sys_ReadNVR4
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDRFCalibratedConfig) for Sys_Power_VDDRFCalibratedConfig
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dflti.o)(.text) for __aeabi_i2d
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text) for __aeabi_dadd
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(ddiv.o)(.text) for __aeabi_ddiv
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o)(.text) for __aeabi_d2iz
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_ADC_Set_Config) for Sys_ADC_Set_Config
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_ADC_InputSelectConfig) for Sys_ADC_InputSelectConfig
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.rodata.targetVoltage) for targetVoltage
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.rodata.targetTrim) for targetTrim
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) for Sys_RFFE_Interpolate
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_Delay_ProgramROM) for Sys_Delay_ProgramROM
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_RFFE_SetTXPower) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_ReadNVR4) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_ReadNVR4) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_ADC_Set_Config) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_ADC_Set_Config) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_ADC_InputSelectConfig) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_ADC_InputSelectConfig) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_GetTrim) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_GetTrim) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to .\objects\rsl10_sys_rffe.o(.rodata.targetVoltage) for targetVoltage
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_GetTrim) for Sys_GetTrim
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to .\objects\rsl10_sys_rffe.o(.rodata.targetTrim) for targetTrim
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dflti.o)(.text) for __aeabi_i2d
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text) for __aeabi_dadd
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(ddiv.o)(.text) for __aeabi_ddiv
+    .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o)(.text) for __aeabi_d2iz
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_RFFE_Interpolate) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate) for [Anonymous Symbol]
+    .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_Delay_ProgramROM) refers to .\objects\rsl10_sys_rffe.o(.text.Sys_Delay_ProgramROM) for [Anonymous Symbol]
+    .\objects\rsl10_sys_timers.o(.ARM.exidx.text.Sys_Timers_Start) refers to .\objects\rsl10_sys_timers.o(.text.Sys_Timers_Start) for [Anonymous Symbol]
+    .\objects\rsl10_sys_timers.o(.ARM.exidx.text.Sys_Timers_Stop) refers to .\objects\rsl10_sys_timers.o(.text.Sys_Timers_Stop) for [Anonymous Symbol]
+    .\objects\rsl10_sys_uart.o(.ARM.exidx.text.Sys_UART_Enable) refers to .\objects\rsl10_sys_uart.o(.text.Sys_UART_Enable) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.Device_Param_Read) refers to .\objects\rsl10_protocol.o(.text.Device_Param_Prepare) for Device_Param_Prepare
+    .\objects\rsl10_protocol.o(.text.Device_Param_Read) refers to .\objects\rsl10_protocol.o(.data.all_ff_bytes) for all_ff_bytes
+    .\objects\rsl10_protocol.o(.text.Device_Param_Read) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcmp.o)(.text) for memcmp
+    .\objects\rsl10_protocol.o(.text.Device_Param_Read) refers to .\objects\rsl10_protocol.o(.bss.all_00_bytes) for all_00_bytes
+    .\objects\rsl10_protocol.o(.text.Device_Param_Read) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o)(.text) for __aeabi_memcpy
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.Device_Param_Read) refers to .\objects\rsl10_protocol.o(.text.Device_Param_Read) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.Device_Param_Prepare) refers to .\objects\rsl10_protocol.o(.text.Device_Param_Prepare) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ADV_IFS) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_ADV_IFS) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ADV_IFS) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ClockAccuracy) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_ClockAccuracy) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ClockAccuracy) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ForcedClockAccuracy) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_ForcedClockAccuracy) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ForcedClockAccuracy) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_MaxNumRAL) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_MaxNumRAL) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_MaxNumRAL) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_MaxRxOctet) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_MaxRxOctet) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_MaxRxOctet) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_AdvDelay) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_AdvDelay) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_AdvDelay) for [Anonymous Symbol]
+    .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_SlaveLatencyDelay) refers to .\objects\rsl10_protocol.o(.data.ble_deviceParam) for ble_deviceParam
+    .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_SlaveLatencyDelay) refers to .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_SlaveLatencyDelay) for [Anonymous Symbol]
+    .\objects\startup_rsl10.o(RESET) refers to .\objects\system_rsl10.o(.text.SystemInit) for SystemInit
+    .\objects\startup_rsl10.o(RESET) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) for __main
+    .\objects\system_rsl10.o(.text.System_GetTargetForTrim) refers to .\objects\system_rsl10.o(.text.Sys_ReadNVR4) for Sys_ReadNVR4
+    .\objects\system_rsl10.o(.ARM.exidx.text.System_GetTargetForTrim) refers to .\objects\system_rsl10.o(.text.System_GetTargetForTrim) for [Anonymous Symbol]
+    .\objects\system_rsl10.o(.ARM.exidx.text.Sys_ReadNVR4) refers to .\objects\system_rsl10.o(.text.Sys_ReadNVR4) for [Anonymous Symbol]
+    .\objects\system_rsl10.o(.text.SystemInit) refers to .\objects\system_rsl10.o(.bss.systemclock) for SystemCoreClock
+    .\objects\system_rsl10.o(.ARM.exidx.text.SystemInit) refers to .\objects\system_rsl10.o(.text.SystemInit) for [Anonymous Symbol]
+    .\objects\system_rsl10.o(.text.SystemCoreClockUpdate) refers to .\objects\system_rsl10.o(.bss.systemclock) for SystemCoreClock
+    .\objects\system_rsl10.o(.text.SystemCoreClockUpdate) refers to .\objects\system_rsl10.o(.text.System_GetTargetForTrim) for System_GetTargetForTrim
+    .\objects\system_rsl10.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to .\objects\system_rsl10.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBufferNoLock) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBufferNoLock) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBufferNoLock) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o)(.text) for __aeabi_memcpy
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ReadUpBufferNoLock) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBufferNoLock) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text._DoInit) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text._DoInit) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memseta.o)(.text) for __aeabi_memclr4
+    .\objects\segger_rtt.o(.text._DoInit) refers to .\objects\segger_rtt.o(.rodata.str1.1) for .L.str
+    .\objects\segger_rtt.o(.text._DoInit) refers to .\objects\segger_rtt.o(.bss._acUpBuffer) for _acUpBuffer
+    .\objects\segger_rtt.o(.text._DoInit) refers to .\objects\segger_rtt.o(.bss._acDownBuffer) for _acDownBuffer
+    .\objects\segger_rtt.o(.text._DoInit) refers to .\objects\segger_rtt.o(.rodata._DoInit._aInitStr) for _DoInit._aInitStr
+    .\objects\segger_rtt.o(.ARM.exidx.text._DoInit) refers to .\objects\segger_rtt.o(.text._DoInit) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadNoLock) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadNoLock) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadNoLock) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o)(.text) for __aeabi_memcpy
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ReadNoLock) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadNoLock) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBufferNoLock) for SEGGER_RTT_ReadUpBufferNoLock
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ReadUpBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_Read) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadNoLock) for SEGGER_RTT_ReadNoLock
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_Read) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Read) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteWithOverwriteNoLock) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteWithOverwriteNoLock) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o)(.text) for __aeabi_memcpy
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteWithOverwriteNoLock) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteWithOverwriteNoLock) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock) refers to .\objects\segger_rtt.o(.text._GetAvailWriteSpace) for _GetAvailWriteSpace
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock) refers to .\objects\segger_rtt.o(.text._WriteNoCheck) for _WriteNoCheck
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock) refers to .\objects\segger_rtt.o(.text._WriteBlocking) for _WriteBlocking
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteDownBufferNoLock) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.ARM.exidx.text._GetAvailWriteSpace) refers to .\objects\segger_rtt.o(.text._GetAvailWriteSpace) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text._WriteNoCheck) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o)(.text) for __aeabi_memcpy
+    .\objects\segger_rtt.o(.ARM.exidx.text._WriteNoCheck) refers to .\objects\segger_rtt.o(.text._WriteNoCheck) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text._WriteBlocking) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o)(.text) for __aeabi_memcpy
+    .\objects\segger_rtt.o(.ARM.exidx.text._WriteBlocking) refers to .\objects\segger_rtt.o(.text._WriteBlocking) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock) refers to .\objects\segger_rtt.o(.text._GetAvailWriteSpace) for _GetAvailWriteSpace
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock) refers to .\objects\segger_rtt.o(.text._WriteNoCheck) for _WriteNoCheck
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock) refers to .\objects\segger_rtt.o(.text._WriteBlocking) for _WriteBlocking
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteNoLock) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock) for SEGGER_RTT_WriteDownBufferNoLock
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteDownBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock) for SEGGER_RTT_WriteNoLock
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_Write) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteString) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(strlen.o)(.text) for strlen
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteString) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) for SEGGER_RTT_Write
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteString) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteString) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkipNoLock) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_PutCharSkipNoLock) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkipNoLock) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkip) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkip) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_PutCharSkip) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkip) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_PutChar) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_PutChar) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_PutChar) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_PutChar) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_GetKey) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Read) for SEGGER_RTT_Read
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_GetKey) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_GetKey) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_WaitKey) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_GetKey) for SEGGER_RTT_GetKey
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WaitKey) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_WaitKey) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_HasKey) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_HasKey) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_HasKey) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_HasKey) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_HasData) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_HasData) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_HasData) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_HasDataUp) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_HasDataUp) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_HasDataUp) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocDownBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocDownBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_AllocDownBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocDownBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocUpBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocUpBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_AllocUpBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocUpBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigUpBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigUpBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ConfigUpBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigUpBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigDownBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigDownBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ConfigDownBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigDownBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameUpBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameUpBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetNameUpBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameUpBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameDownBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameDownBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetNameDownBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameDownBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsUpBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsUpBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetFlagsUpBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsUpBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsDownBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsDownBuffer) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetFlagsDownBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsDownBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_Init) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_Init) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Init) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.data._aTerminalId) for _aTerminalId
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.bss._ActiveTerminal) for _ActiveTerminal
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.text._WriteBlocking) for _WriteBlocking
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.text._GetAvailWriteSpace) for _GetAvailWriteSpace
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.text._WriteNoCheck) for _WriteNoCheck
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetTerminal) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.text._DoInit) for _DoInit
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(strlen.o)(.text) for strlen
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.text._GetAvailWriteSpace) for _GetAvailWriteSpace
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.text._PostTerminalSwitch) for _PostTerminalSwitch
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.text._WriteBlocking) for _WriteBlocking
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.bss._ActiveTerminal) for _ActiveTerminal
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_TerminalOut) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text._PostTerminalSwitch) refers to .\objects\segger_rtt.o(.data._aTerminalId) for _aTerminalId
+    .\objects\segger_rtt.o(.text._PostTerminalSwitch) refers to .\objects\segger_rtt.o(.text._WriteBlocking) for _WriteBlocking
+    .\objects\segger_rtt.o(.ARM.exidx.text._PostTerminalSwitch) refers to .\objects\segger_rtt.o(.text._PostTerminalSwitch) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_GetAvailWriteSpace) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_GetAvailWriteSpace) refers to .\objects\segger_rtt.o(.text._GetAvailWriteSpace) for _GetAvailWriteSpace
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_GetAvailWriteSpace) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_GetAvailWriteSpace) for [Anonymous Symbol]
+    .\objects\segger_rtt.o(.text.SEGGER_RTT_GetBytesInBuffer) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_GetBytesInBuffer) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_GetBytesInBuffer) for [Anonymous Symbol]
+    .\objects\segger_rtt_asm_armv7m.o(.text) refers to .\objects\segger_rtt.o(.bss._SEGGER_RTT) for _SEGGER_RTT
+    .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf) refers to .\objects\segger_rtt_printf.o(.text._StoreChar) for _StoreChar
+    .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf) refers to .\objects\segger_rtt_printf.o(.text._PrintInt) for _PrintInt
+    .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf) refers to .\objects\segger_rtt_printf.o(.text._PrintUnsigned) for _PrintUnsigned
+    .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) for SEGGER_RTT_Write
+    .\objects\segger_rtt_printf.o(.ARM.exidx.text.SEGGER_RTT_vprintf) refers to .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf) for [Anonymous Symbol]
+    .\objects\segger_rtt_printf.o(.text._StoreChar) refers to .\objects\segger_rtt.o(.text.SEGGER_RTT_Write) for SEGGER_RTT_Write
+    .\objects\segger_rtt_printf.o(.ARM.exidx.text._StoreChar) refers to .\objects\segger_rtt_printf.o(.text._StoreChar) for [Anonymous Symbol]
+    .\objects\segger_rtt_printf.o(.text._PrintInt) refers to .\objects\segger_rtt_printf.o(.text._StoreChar) for _StoreChar
+    .\objects\segger_rtt_printf.o(.text._PrintInt) refers to .\objects\segger_rtt_printf.o(.text._PrintUnsigned) for _PrintUnsigned
+    .\objects\segger_rtt_printf.o(.ARM.exidx.text._PrintInt) refers to .\objects\segger_rtt_printf.o(.text._PrintInt) for [Anonymous Symbol]
+    .\objects\segger_rtt_printf.o(.text._PrintUnsigned) refers to .\objects\segger_rtt_printf.o(.text._StoreChar) for _StoreChar
+    .\objects\segger_rtt_printf.o(.text._PrintUnsigned) refers to .\objects\segger_rtt_printf.o(.rodata._PrintUnsigned._aV2C) for _PrintUnsigned._aV2C
+    .\objects\segger_rtt_printf.o(.ARM.exidx.text._PrintUnsigned) refers to .\objects\segger_rtt_printf.o(.text._PrintUnsigned) for [Anonymous Symbol]
+    .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_printf) refers to .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf) for SEGGER_RTT_vprintf
+    .\objects\segger_rtt_printf.o(.ARM.exidx.text.SEGGER_RTT_printf) refers to .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_printf) for [Anonymous Symbol]
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)(.ARM.Collect$$$$00000008) for _main_clock
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)(.ARM.Collect$$$$0000000B) for _main_init
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)(.ARM.Collect$$$$00000004) for _main_scatterload
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00000003) for _main_stk
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(ldiv.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(uldiv.o)(.text) for __aeabi_uldivmod
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(iusefp.o)(.text) for __I$use$fp
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llshl.o)(.text) for __aeabi_llsl
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llsshr.o)(.text) for __aeabi_lasr
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text) for _double_epilogue
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(ddiv.o)(.text) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(iusefp.o)(.text) for __I$use$fp
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(ddiv.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text) for _double_round
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dflti.o)(.text) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(iusefp.o)(.text) for __I$use$fp
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dflti.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text) for _double_epilogue
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o)(.text) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(iusefp.o)(.text) for __I$use$fp
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llushr.o)(.text) for __aeabi_llsr
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00000003) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00002714) for __lit__00000000
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(__vectab_stack_and_reset_area) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000) for __main
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)(.ARM.Collect$$$$00000004) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text) for __scatterload
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)(.ARM.Collect$$$$0000000B) refers to .\objects\main.o(.text.main) for main
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9b.o)(.ARM.Collect$$$$0000000C) refers to .\objects\main.o(.text.main) for main
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(uldiv.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llushr.o)(.text) for __aeabi_llsr
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(uldiv.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llshl.o)(.text) for __aeabi_llsl
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text) refers (Special) to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(iusefp.o)(.text) for __I$use$fp
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llshl.o)(.text) for __aeabi_llsl
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llushr.o)(.text) for __aeabi_llsr
+    C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text) refers to C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing .\objects\main.o(.text), (0 bytes).
+    Removing .\objects\main.o(.ARM.exidx.text.Initialize), (8 bytes).
+    Removing .\objects\main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing .\objects\main.o(.ARM.use_no_argv), (4 bytes).
+    Removing .\objects\rsl10_romvect.o(.text), (0 bytes).
+    Removing .\objects\rsl10_romvect.o(.text.Sys_BootROM_StrictStartApp), (82 bytes).
+    Removing .\objects\rsl10_romvect.o(.ARM.exidx.text.Sys_BootROM_StrictStartApp), (8 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetGain), (44 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_GetGain), (8 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain), (648 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_GetOffsetAndGain), (8 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.text.Sys_ADC_CalibratedConfig), (52 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_CalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.text.Sys_ReadNVR4), (26 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ReadNVR4), (8 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.text.Sys_GetTrim), (30 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_GetTrim), (8 bytes).
+    Removing .\objects\rsl10_sys_adc.o(.rodata.cst8), (8 bytes).
+    Removing .\objects\rsl10_sys_asrc.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_ConfigRunTime), (464 bytes).
+    Removing .\objects\rsl10_sys_asrc.o(.ARM.exidx.text.Sys_ASRC_ConfigRunTime), (8 bytes).
+    Removing .\objects\rsl10_sys_asrc.o(.text.Sys_ASRC_Config), (34 bytes).
+    Removing .\objects\rsl10_sys_asrc.o(.ARM.exidx.text.Sys_ASRC_Config), (8 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfigMult), (72 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.ARM.exidx.text.Sys_Audio_ODDIOConfigMult), (8 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.text.Sys_Audio_ODDIOConfig), (38 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.ARM.exidx.text.Sys_Audio_ODDIOConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.text.Sys_DIO_Config), (26 bytes).
+    Removing .\objects\rsl10_sys_audio.o(.ARM.exidx.text.Sys_DIO_Config), (8 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.text.Sys_Clocks_Osc32kCalibratedConfig), (80 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.ARM.exidx.text.Sys_Clocks_Osc32kCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.text.Sys_GetTrim), (30 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.ARM.exidx.text.Sys_GetTrim), (8 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.text.Sys_Clocks_OscRCCalibratedConfig), (192 bytes).
+    Removing .\objects\rsl10_sys_clocks.o(.ARM.exidx.text.Sys_Clocks_OscRCCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_crc.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_crc.o(.text.Sys_CRC_Check), (134 bytes).
+    Removing .\objects\rsl10_sys_crc.o(.ARM.exidx.text.Sys_CRC_Check), (8 bytes).
+    Removing .\objects\rsl10_sys_crc.o(.text.Sys_CRC_Calc), (562 bytes).
+    Removing .\objects\rsl10_sys_crc.o(.ARM.exidx.text.Sys_CRC_Calc), (8 bytes).
+    Removing .\objects\rsl10_sys_dma.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_dma.o(.text.Sys_DMA_ChannelConfig), (106 bytes).
+    Removing .\objects\rsl10_sys_dma.o(.ARM.exidx.text.Sys_DMA_ChannelConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_flash.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_flash.o(.text.Sys_Flash_Copy), (180 bytes).
+    Removing .\objects\rsl10_sys_flash.o(.ARM.exidx.text.Sys_Flash_Copy), (8 bytes).
+    Removing .\objects\rsl10_sys_flash.o(.text.Sys_Flash_Compare), (146 bytes).
+    Removing .\objects\rsl10_sys_flash.o(.ARM.exidx.text.Sys_Flash_Compare), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_BandGapCalibratedConfig), (72 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_BandGapCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_GetTrim), (30 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_GetTrim), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDRFCalibratedConfig), (120 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDRFCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDPACalibratedConfig), (72 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDPACalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDCCalibratedConfig), (72 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDCCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDCStandbyCalibratedConfig), (72 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDCStandbyCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDMCalibratedConfig), (72 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDMCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_VDDMStandbyCalibratedConfig), (72 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_VDDMStandbyCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power.o(.text.Sys_Power_DCDCCalibratedConfig), (164 bytes).
+    Removing .\objects\rsl10_sys_power.o(.ARM.exidx.text.Sys_Power_DCDCCalibratedConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init), (306 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Sleep_Init), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_ClearChannelStatus), (26 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_DMA_ClearChannelStatus), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_DMA_Get_ChannelStatus), (24 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_DMA_Get_ChannelStatus), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_Init_2Mbps), (468 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Sleep_Init_2Mbps), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Continue_Application), (2 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Continue_Application), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.sys_powermodes_sleep), (306 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.sys_powermodes_sleep), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup_2mbps), (566 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.sys_powermodes_wakeup_2mbps), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.sys_powermodes_wakeup), (406 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.sys_powermodes_wakeup), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Sleep_WakeupFromFlash), (134 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Sleep_WakeupFromFlash), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Init), (284 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Standby_Init), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby), (186 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Standby), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.__NVIC_ClearPendingIRQ), (48 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.__NVIC_ClearPendingIRQ), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.__NVIC_EnableIRQ), (48 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.text.Sys_PowerModes_Standby_Wakeup), (402 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.ARM.exidx.text.Sys_PowerModes_Standby_Wakeup), (8 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_1), (192 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.restore_2Mbps_bank), (1 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x1C_0x6F), (84 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x06_0x07), (2 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x08), (1 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.rf_registers_image_2_0x9F), (1 bytes).
+    Removing .\objects\rsl10_sys_power_modes.o(.bss.bb_registers_image), (436 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_SetTXPower), (1262 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_RFFE_SetTXPower), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_ReadNVR4), (26 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_ReadNVR4), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_ADC_Set_Config), (24 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_ADC_Set_Config), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_ADC_InputSelectConfig), (26 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_ADC_InputSelectConfig), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_GetTrim), (30 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_GetTrim), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_RFFE_Interpolate), (382 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_RFFE_Interpolate), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.text.Sys_Delay_ProgramROM), (30 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.ARM.exidx.text.Sys_Delay_ProgramROM), (8 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.rodata.targetVoltage), (7 bytes).
+    Removing .\objects\rsl10_sys_rffe.o(.rodata.targetTrim), (7 bytes).
+    Removing .\objects\rsl10_sys_timers.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_timers.o(.text.Sys_Timers_Start), (166 bytes).
+    Removing .\objects\rsl10_sys_timers.o(.ARM.exidx.text.Sys_Timers_Start), (8 bytes).
+    Removing .\objects\rsl10_sys_timers.o(.text.Sys_Timers_Stop), (110 bytes).
+    Removing .\objects\rsl10_sys_timers.o(.ARM.exidx.text.Sys_Timers_Stop), (8 bytes).
+    Removing .\objects\rsl10_sys_uart.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_uart.o(.text.Sys_UART_Enable), (144 bytes).
+    Removing .\objects\rsl10_sys_uart.o(.ARM.exidx.text.Sys_UART_Enable), (8 bytes).
+    Removing .\objects\rsl10_sys_version.o(.text), (0 bytes).
+    Removing .\objects\rsl10_sys_version.o(.rodata.RSL10_Sys_Version), (2 bytes).
+    Removing .\objects\rsl10_protocol.o(.text), (0 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.Device_Param_Read), (782 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.Device_Param_Read), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.Device_Param_Prepare), (20 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.Device_Param_Prepare), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ADV_IFS), (20 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_ADV_IFS), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ClockAccuracy), (48 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_ClockAccuracy), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_ForcedClockAccuracy), (40 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_ForcedClockAccuracy), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_MaxNumRAL), (80 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_MaxNumRAL), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_MaxRxOctet), (114 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_MaxRxOctet), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_AdvDelay), (46 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_AdvDelay), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.text.BLE_DeviceParam_Set_SlaveLatencyDelay), (24 bytes).
+    Removing .\objects\rsl10_protocol.o(.ARM.exidx.text.BLE_DeviceParam_Set_SlaveLatencyDelay), (8 bytes).
+    Removing .\objects\rsl10_protocol.o(.data.ble_deviceParam), (16 bytes).
+    Removing .\objects\rsl10_protocol.o(.data.all_ff_bytes), (32 bytes).
+    Removing .\objects\rsl10_protocol.o(.bss.all_00_bytes), (6 bytes).
+    Removing .\objects\startup_rsl10.o(STACK), (1024 bytes).
+    Removing .\objects\startup_rsl10.o(HEAP), (1024 bytes).
+    Removing .\objects\system_rsl10.o(.text), (0 bytes).
+    Removing .\objects\system_rsl10.o(.text.System_GetTargetForTrim), (122 bytes).
+    Removing .\objects\system_rsl10.o(.ARM.exidx.text.System_GetTargetForTrim), (8 bytes).
+    Removing .\objects\system_rsl10.o(.text.Sys_ReadNVR4), (26 bytes).
+    Removing .\objects\system_rsl10.o(.ARM.exidx.text.Sys_ReadNVR4), (8 bytes).
+    Removing .\objects\system_rsl10.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing .\objects\system_rsl10.o(.text.SystemCoreClockUpdate), (840 bytes).
+    Removing .\objects\system_rsl10.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing .\objects\printf.o(.text), (0 bytes).
+    Removing .\objects\segger_rtt.o(.text), (0 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBufferNoLock), (312 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ReadUpBufferNoLock), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text._DoInit), (156 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text._DoInit), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadNoLock), (312 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ReadNoLock), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_ReadUpBuffer), (48 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ReadUpBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_Read), (48 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_Read), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteWithOverwriteNoLock), (282 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteWithOverwriteNoLock), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBufferNoLock), (176 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteDownBufferNoLock), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text._GetAvailWriteSpace), (62 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text._GetAvailWriteSpace), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text._WriteNoCheck), (132 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text._WriteNoCheck), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text._WriteBlocking), (224 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text._WriteBlocking), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteNoLock), (176 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteNoLock), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteDownBuffer), (76 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteDownBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_Write), (76 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_Write), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_WriteString), (30 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WriteString), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkipNoLock), (110 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_PutCharSkipNoLock), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_PutCharSkip), (160 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_PutCharSkip), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_PutChar), (188 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_PutChar), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_GetKey), (48 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_GetKey), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_WaitKey), (28 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_WaitKey), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_HasKey), (80 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_HasKey), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_HasData), (44 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_HasData), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_HasDataUp), (44 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_HasDataUp), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocDownBuffer), (238 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_AllocDownBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_AllocUpBuffer), (238 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_AllocUpBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigUpBuffer), (160 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ConfigUpBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_ConfigDownBuffer), (160 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_ConfigDownBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameUpBuffer), (116 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetNameUpBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_SetNameDownBuffer), (116 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetNameDownBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsUpBuffer), (116 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetFlagsUpBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_SetFlagsDownBuffer), (116 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetFlagsDownBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_Init), (8 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_Init), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_SetTerminal), (218 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_SetTerminal), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_TerminalOut), (346 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_TerminalOut), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text._PostTerminalSwitch), (50 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text._PostTerminalSwitch), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_GetAvailWriteSpace), (38 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_GetAvailWriteSpace), (8 bytes).
+    Removing .\objects\segger_rtt.o(.text.SEGGER_RTT_GetBytesInBuffer), (98 bytes).
+    Removing .\objects\segger_rtt.o(.ARM.exidx.text.SEGGER_RTT_GetBytesInBuffer), (8 bytes).
+    Removing .\objects\segger_rtt.o(.bss._SEGGER_RTT), (168 bytes).
+    Removing .\objects\segger_rtt.o(.data._aTerminalId), (16 bytes).
+    Removing .\objects\segger_rtt.o(.bss._ActiveTerminal), (1 bytes).
+    Removing .\objects\segger_rtt.o(.rodata._DoInit._aInitStr), (17 bytes).
+    Removing .\objects\segger_rtt.o(.rodata.str1.1), (9 bytes).
+    Removing .\objects\segger_rtt.o(.bss._acUpBuffer), (1024 bytes).
+    Removing .\objects\segger_rtt.o(.bss._acDownBuffer), (16 bytes).
+    Removing .\objects\segger_rtt_asm_armv7m.o(.text), (140 bytes).
+    Removing .\objects\segger_rtt_printf.o(.text), (0 bytes).
+    Removing .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_vprintf), (828 bytes).
+    Removing .\objects\segger_rtt_printf.o(.ARM.exidx.text.SEGGER_RTT_vprintf), (8 bytes).
+    Removing .\objects\segger_rtt_printf.o(.text._StoreChar), (118 bytes).
+    Removing .\objects\segger_rtt_printf.o(.ARM.exidx.text._StoreChar), (8 bytes).
+    Removing .\objects\segger_rtt_printf.o(.text._PrintInt), (460 bytes).
+    Removing .\objects\segger_rtt_printf.o(.ARM.exidx.text._PrintInt), (8 bytes).
+    Removing .\objects\segger_rtt_printf.o(.text._PrintUnsigned), (428 bytes).
+    Removing .\objects\segger_rtt_printf.o(.ARM.exidx.text._PrintUnsigned), (8 bytes).
+    Removing .\objects\segger_rtt_printf.o(.text.SEGGER_RTT_printf), (42 bytes).
+    Removing .\objects\segger_rtt_printf.o(.ARM.exidx.text.SEGGER_RTT_printf), (8 bytes).
+    Removing .\objects\segger_rtt_printf.o(.rodata._PrintUnsigned._aV2C), (16 bytes).
+    Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o)(.text), (334 bytes).
+    Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(ddiv.o)(.text), (222 bytes).
+    Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dflti.o)(.text), (34 bytes).
+    Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o)(.text), (62 bytes).
+    Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text), (186 bytes).
+
+264 unused section(s) (total 23922 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(ldiv.o) ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(uldiv.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7a.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8a.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9b.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10b.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o) ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11b.o) ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llshl.o) ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llushr.o) ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(llsshr.o) ABSOLUTE
+    ../clib/microlib/string/memcmp.c         0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcmp.o) ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpya.o) ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memcpyb.o) ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(memseta.o) ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(strlen.o) ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(iusefp.o) ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dadd.o) ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(ddiv.o) ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o) ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o) ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dflti.o) ABSOLUTE
+    RTE/Device/RSL10/startup_rsl10.s         0x00000000   Number         0  .\objects\startup_rsl10.o ABSOLUTE
+    SEGGER_RTT.c                             0x00000000   Number         0  .\objects\segger_rtt.o ABSOLUTE
+    SEGGER_RTT_printf.c                      0x00000000   Number         0  .\objects\segger_rtt_printf.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(dc.o) ABSOLUTE
+    init.s                                   0x00000000   Number         0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o) ABSOLUTE
+    main.c                                   0x00000000   Number         0  .\objects\main.o ABSOLUTE
+    printf.c                                 0x00000000   Number         0  .\objects\printf.o ABSOLUTE
+    rsl10_protocol.c                         0x00000000   Number         0  .\objects\rsl10_protocol.o ABSOLUTE
+    rsl10_romvect.c                          0x00000000   Number         0  .\objects\rsl10_romvect.o ABSOLUTE
+    rsl10_sys_adc.c                          0x00000000   Number         0  .\objects\rsl10_sys_adc.o ABSOLUTE
+    rsl10_sys_asrc.c                         0x00000000   Number         0  .\objects\rsl10_sys_asrc.o ABSOLUTE
+    rsl10_sys_audio.c                        0x00000000   Number         0  .\objects\rsl10_sys_audio.o ABSOLUTE
+    rsl10_sys_clocks.c                       0x00000000   Number         0  .\objects\rsl10_sys_clocks.o ABSOLUTE
+    rsl10_sys_crc.c                          0x00000000   Number         0  .\objects\rsl10_sys_crc.o ABSOLUTE
+    rsl10_sys_dma.c                          0x00000000   Number         0  .\objects\rsl10_sys_dma.o ABSOLUTE
+    rsl10_sys_flash.c                        0x00000000   Number         0  .\objects\rsl10_sys_flash.o ABSOLUTE
+    rsl10_sys_power.c                        0x00000000   Number         0  .\objects\rsl10_sys_power.o ABSOLUTE
+    rsl10_sys_power_modes.c                  0x00000000   Number         0  .\objects\rsl10_sys_power_modes.o ABSOLUTE
+    rsl10_sys_rffe.c                         0x00000000   Number         0  .\objects\rsl10_sys_rffe.o ABSOLUTE
+    rsl10_sys_timers.c                       0x00000000   Number         0  .\objects\rsl10_sys_timers.o ABSOLUTE
+    rsl10_sys_uart.c                         0x00000000   Number         0  .\objects\rsl10_sys_uart.o ABSOLUTE
+    rsl10_sys_version.c                      0x00000000   Number         0  .\objects\rsl10_sys_version.o ABSOLUTE
+    system_rsl10.c                           0x00000000   Number         0  .\objects\system_rsl10.o ABSOLUTE
+    RESET                                    0x00100000   Section      400  .\objects\startup_rsl10.o(RESET)
+    .ARM.Collect$$$$00000000                 0x00100190   Section        0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000003                 0x00100190   Section        4  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00000003)
+    .ARM.Collect$$$$00000004                 0x00100194   Section        4  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00100198   Section        0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00100198   Section        0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00100198   Section        8  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x001001a0   Data           4  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00002714)
+    .ARM.Collect$$$$0000000D                 0x001001a0   Section        0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x001001a0   Section        0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002714                 0x001001a0   Section        4  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00002714)
+    .text                                    0x001001a4   Section       36  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text)
+    [Anonymous Symbol]                       0x001001c8   Section        0  .\objects\main.o(.text.Initialize)
+    [Anonymous Symbol]                       0x001001d4   Section        0  .\objects\system_rsl10.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x00100218   Section        0  .\objects\main.o(.text.main)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$WCHAR32$~SHL$OSPACE$ROPI$EBA8$MICROLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    ISR_Vector_Table_Size                    0x00000164   Number         0  .\objects\startup_rsl10.o ABSOLUTE
+    ISR_Vector_Table                         0x00100000   Data           0  .\objects\startup_rsl10.o(RESET)
+    ISR_Vector_Table_End                     0x00100165   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    Reset_Handler                            0x00100165   Thumb Code    16  .\objects\startup_rsl10.o(RESET)
+    NMI_Handler                              0x00100175   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    HardFault_Handler                        0x00100177   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    MemManage_Handler                        0x00100179   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    BusFault_Handler                         0x0010017b   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    UsageFault_Handler                       0x0010017d   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    SVC_Handler                              0x0010017f   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    DebugMon_Handler                         0x00100181   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    PendSV_Handler                           0x00100183   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    SysTick_Handler                          0x00100185   Thumb Code     2  .\objects\startup_rsl10.o(RESET)
+    ADC_BATMON_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    ASRC_ERROR_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    ASRC_IN_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    ASRC_OUT_IRQHandler                      0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    AUDIOSINK_PERIOD_IRQHandler              0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    AUDIOSINK_PHASE_IRQHandler               0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_AUDIO0_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_AUDIO1_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_AUDIO2_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_COEX_IN_PROCESS_IRQHandler           0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_COEX_RX_TX_IRQHandler                0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_CRYPT_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_CSCNT_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_ERROR_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_EVENT_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_FINETGTIM_IRQHandler                 0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_GROSSTGTIM_IRQHandler                0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_RX_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_SLP_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    BLE_SW_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    CLKDET_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DIO0_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DIO1_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DIO2_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DIO3_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA0_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA1_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA2_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA3_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA4_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA5_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA6_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMA7_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMIC_OD_ERROR_IRQHandler                 0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DMIC_OUT_OD_IN_IRQHandler                0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP0_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP1_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP2_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP3_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP4_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP5_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP6_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    DSP7_IRQHandler                          0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    FLASH_COPY_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    FLASH_ECC_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    I2C_IRQHandler                           0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    MEMORY_ERROR_IRQHandler                  0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    PCM_ERROR_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    PCM_RX_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    PCM_TX_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RF_IRQ_RECEIVED_IRQHandler               0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RF_RXFIFO_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RF_RXSTOP_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RF_SYNC_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RF_TXFIFO_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RF_TX_IRQHandler                         0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RTC_ALARM_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    RTC_CLOCK_IRQHandler                     0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    SPI0_ERROR_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    SPI0_RX_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    SPI0_TX_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    SPI1_ERROR_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    SPI1_RX_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    SPI1_TX_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    TIMER0_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    TIMER1_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    TIMER2_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    TIMER3_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    UART_ERROR_IRQHandler                    0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    UART_RX_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    UART_TX_IRQHandler                       0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    WAKEUP_IRQHandler                        0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    WATCHDOG_IRQHandler                      0x00100187   Thumb Code     0  .\objects\startup_rsl10.o(RESET)
+    __main                                   0x00100191   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00100191   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00000003)
+    _main_scatterload                        0x00100195   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00100199   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00100199   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00100199   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00100199   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x001001a1   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x001001a1   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)(.ARM.Collect$$$$0000000F)
+    __scatterload                            0x001001a5   Thumb Code    28  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text)
+    __scatterload_rt2                        0x001001a5   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text)
+    Initialize                               0x001001c9   Thumb Code    10  .\objects\main.o(.text.Initialize)
+    SystemInit                               0x001001d5   Thumb Code    66  .\objects\system_rsl10.o(.text.SystemInit)
+    main                                     0x00100219   Thumb Code    42  .\objects\main.o(.text.main)
+    Region$$Table$$Base                      0x00100244   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00100244   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x20000000   Data           4  .\objects\system_rsl10.o(.bss.systemclock)
+    Image$$ARM_LIB_STACK$$ZI$$Limit          0x20006000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00100191
+
+  Load Region SECTIONS (Base: 0x00100000, Size: 0x00000244, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region FLASH (Exec base: 0x00100000, Load base: 0x00100000, Size: 0x00000244, Max: 0x0005f000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00100000   0x00100000   0x00000190   Code   RO          253    RESET               .\objects\startup_rsl10.o
+    0x00100190   0x00100190   0x00000000   Code   RO          385  * .ARM.Collect$$$$00000000  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)
+    0x00100190   0x00100190   0x00000004   Code   RO          408    .ARM.Collect$$$$00000003  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
+    0x00100194   0x00100194   0x00000004   Code   RO          411    .ARM.Collect$$$$00000004  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)
+    0x00100198   0x00100198   0x00000000   Code   RO          413    .ARM.Collect$$$$00000008  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)
+    0x00100198   0x00100198   0x00000000   Code   RO          415    .ARM.Collect$$$$0000000A  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)
+    0x00100198   0x00100198   0x00000008   Code   RO          416    .ARM.Collect$$$$0000000B  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)
+    0x001001a0   0x001001a0   0x00000000   Code   RO          418    .ARM.Collect$$$$0000000D  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)
+    0x001001a0   0x001001a0   0x00000000   Code   RO          420    .ARM.Collect$$$$0000000F  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)
+    0x001001a0   0x001001a0   0x00000004   Code   RO          409    .ARM.Collect$$$$00002714  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
+    0x001001a4   0x001001a4   0x00000024   Code   RO          433    .text               C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)
+    0x001001c8   0x001001c8   0x0000000a   Code   RO            4    .text.Initialize    .\objects\main.o
+    0x001001d2   0x001001d2   0x00000002   PAD
+    0x001001d4   0x001001d4   0x00000042   Code   RO          264    .text.SystemInit    .\objects\system_rsl10.o
+    0x00100216   0x00100216   0x00000002   PAD
+    0x00100218   0x00100218   0x0000002a   Code   RO            6    .text.main          .\objects\main.o
+    0x00100242   0x00100242   0x00000002   PAD
+    0x00100244   0x00100244   0x00000000   Data   RO          436    Region$$Table       anon$$obj.o
+
+
+    Execution Region SYSTEMCLOCK (Exec base: 0x20000000, Load base: 0x00100244, Size: 0x00000004, Max: 0x00000004, ABSOLUTE, UNINIT)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000        -       0x00000004   Zero   RW          268    .bss.systemclock    .\objects\system_rsl10.o
+
+
+    Execution Region DRAM (Exec base: 0x20000008, Load base: 0x00100244, Size: 0x00000000, Max: 0x000057f8, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ARM_LIB_HEAP (Exec base: 0x20005800, Load base: 0x00100244, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20005800        -       0x00000400   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Exec base: 0x20005c00, Load base: 0x00100244, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20005c00        -       0x00000400   Zero   RW            2    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        52          0          0          0          0       2113   .\objects\main.o
+       400        364          0          0          0        800   .\objects\startup_rsl10.o
+        66          0          0          0          4       5186   .\objects\system_rsl10.o
+
+    ----------------------------------------------------------------------
+       524        364          0          0       2052       8099   Object Totals
+         0          0          0          0       2048          0   (incl. Generated)
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)
+         0          0          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)
+         0          0          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)
+         8          4          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
+         4          0          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)
+         0          0          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)
+         0          0          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)
+         8          4          0          0          0          0   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)
+        36          8          0          0          0         68   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)
+
+    ----------------------------------------------------------------------
+        56         16          0          0          0         68   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        56         16          0          0          0         68   C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l
+
+    ----------------------------------------------------------------------
+        56         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       580        380          0          0       2052       8095   Grand Totals
+       580        380          0          0       2052       8095   ELF Image Totals
+       580        380          0          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  580 (   0.57kB)
+    Total RW  Size (RW Data + ZI Data)              2052 (   2.00kB)
+    Total ROM Size (Code + RO Data + RW Data)        580 (   0.57kB)
+
+==============================================================================
+

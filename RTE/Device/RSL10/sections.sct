@@ -1,0 +1,51 @@
+; ----------------------------------------------------------------------------
+; Copyright (c) 2017 Semiconductor Components Industries, LLC
+; (d/b/a ON Semiconductor). All Rights Reserved.
+;
+; This code is the property of ON Semiconductor and may not be redistributed
+; in any form without prior written permission from ON Semiconductor. The
+; terms of use and warranty for this code are covered by contractual
+; agreements between ON Semiconductor and the licensee.
+; ----------------------------------------------------------------------------
+; sections.sct
+; - Simple sections scatter file
+; ----------------------------------------------------------------------------
+; Section definitions
+; ----------------------------------------------------------------------------
+SECTIONS 0x00100000
+{
+    ; For Cortex-M devices, the beginning of the startup code is stored in
+    ; the .interrupt_vector section, which goes to FLASH. All other code
+    ; follows this section.
+    FLASH 0x00100000 0x5F000
+    {
+        * (RESET, +FIRST)
+        
+        ; Remaining program code
+        * (+RO)
+
+        ; All remaining DSP code
+        .ANY (.dsp, .dsp.*)
+    }
+    
+    SYSTEMCLOCK 0x20000000 UNINIT 0x4
+    {
+        ; Place the system clock variable first
+        * (.bss.systemclock +FIRST)
+    }
+    
+    ; Define the data sections
+    DRAM 0x20000008 (0x6000 - 0x8 - 0x800)
+    {
+        ; Place all remaining read-write and zero-initialized data 
+	.ANY (+RW +ZI)
+    }
+
+    ; Define a heap region
+    ARM_LIB_HEAP 0x20005800 EMPTY 0x400
+    { }
+
+    ; Define a stack region
+    ARM_LIB_STACK 0x20005C00 EMPTY 0x400
+    { }
+}
