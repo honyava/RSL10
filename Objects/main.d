@@ -1,4 +1,4 @@
-./objects/main.o: main.c \
+./objects/main.o: main.c ..\RSL10\main.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\RSL10.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h \

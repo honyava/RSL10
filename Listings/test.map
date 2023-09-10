@@ -4,9 +4,16 @@ Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
 
 Section Cross References
 
+    .\objects\main.o(.text.Initialize) refers to .\objects\main.o(.text.Sys_Clocks_SystemClkConfig) for Sys_Clocks_SystemClkConfig
+    .\objects\main.o(.text.Initialize) refers to .\objects\main.o(.text.Sys_DIO_Config) for Sys_DIO_Config
     .\objects\main.o(.ARM.exidx.text.Initialize) refers to .\objects\main.o(.text.Initialize) for [Anonymous Symbol]
+    .\objects\main.o(.text.Sys_Clocks_SystemClkConfig) refers to .\objects\system_rsl10.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    .\objects\main.o(.ARM.exidx.text.Sys_Clocks_SystemClkConfig) refers to .\objects\main.o(.text.Sys_Clocks_SystemClkConfig) for [Anonymous Symbol]
+    .\objects\main.o(.ARM.exidx.text.Sys_DIO_Config) refers to .\objects\main.o(.text.Sys_DIO_Config) for [Anonymous Symbol]
     .\objects\main.o(.text.main) refers to .\objects\main.o(.text.Initialize) for Initialize
+    .\objects\main.o(.text.main) refers to .\objects\main.o(.text.Sys_GPIO_Toggle) for Sys_GPIO_Toggle
     .\objects\main.o(.ARM.exidx.text.main) refers to .\objects\main.o(.text.main) for [Anonymous Symbol]
+    .\objects\main.o(.ARM.exidx.text.Sys_GPIO_Toggle) refers to .\objects\main.o(.text.Sys_GPIO_Toggle) for [Anonymous Symbol]
     .\objects\rsl10_romvect.o(.ARM.exidx.text.Sys_BootROM_StrictStartApp) refers to .\objects\rsl10_romvect.o(.text.Sys_BootROM_StrictStartApp) for [Anonymous Symbol]
     .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetOffsetAndGain) for Sys_ADC_GetOffsetAndGain
     .\objects\rsl10_sys_adc.o(.ARM.exidx.text.Sys_ADC_GetGain) refers to .\objects\rsl10_sys_adc.o(.text.Sys_ADC_GetGain) for [Anonymous Symbol]
@@ -347,7 +354,10 @@ Removing Unused input sections from the image.
 
     Removing .\objects\main.o(.text), (0 bytes).
     Removing .\objects\main.o(.ARM.exidx.text.Initialize), (8 bytes).
+    Removing .\objects\main.o(.ARM.exidx.text.Sys_Clocks_SystemClkConfig), (8 bytes).
+    Removing .\objects\main.o(.ARM.exidx.text.Sys_DIO_Config), (8 bytes).
     Removing .\objects\main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing .\objects\main.o(.ARM.exidx.text.Sys_GPIO_Toggle), (8 bytes).
     Removing .\objects\main.o(.ARM.use_no_argv), (4 bytes).
     Removing .\objects\rsl10_romvect.o(.text), (0 bytes).
     Removing .\objects\rsl10_romvect.o(.text.Sys_BootROM_StrictStartApp), (82 bytes).
@@ -503,12 +513,9 @@ Removing Unused input sections from the image.
     Removing .\objects\startup_rsl10.o(STACK), (1024 bytes).
     Removing .\objects\startup_rsl10.o(HEAP), (1024 bytes).
     Removing .\objects\system_rsl10.o(.text), (0 bytes).
-    Removing .\objects\system_rsl10.o(.text.System_GetTargetForTrim), (122 bytes).
     Removing .\objects\system_rsl10.o(.ARM.exidx.text.System_GetTargetForTrim), (8 bytes).
-    Removing .\objects\system_rsl10.o(.text.Sys_ReadNVR4), (26 bytes).
     Removing .\objects\system_rsl10.o(.ARM.exidx.text.Sys_ReadNVR4), (8 bytes).
     Removing .\objects\system_rsl10.o(.ARM.exidx.text.SystemInit), (8 bytes).
-    Removing .\objects\system_rsl10.o(.text.SystemCoreClockUpdate), (840 bytes).
     Removing .\objects\system_rsl10.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
     Removing .\objects\printf.o(.text), (0 bytes).
     Removing .\objects\segger_rtt.o(.text), (0 bytes).
@@ -610,7 +617,7 @@ Removing Unused input sections from the image.
     Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(dfixi.o)(.text), (62 bytes).
     Removing C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mf_w.l(depilogue.o)(.text), (186 bytes).
 
-264 unused section(s) (total 23922 bytes) removed from the image.
+264 unused section(s) (total 22958 bytes) removed from the image.
 
 ==============================================================================
 
@@ -685,8 +692,18 @@ Image Symbol Table
     .ARM.Collect$$$$00002714                 0x001001a0   Section        4  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)(.ARM.Collect$$$$00002714)
     .text                                    0x001001a4   Section       36  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text)
     [Anonymous Symbol]                       0x001001c8   Section        0  .\objects\main.o(.text.Initialize)
-    [Anonymous Symbol]                       0x001001d4   Section        0  .\objects\system_rsl10.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x00100218   Section        0  .\objects\main.o(.text.main)
+    Sys_Clocks_SystemClkConfig               0x00100275   Thumb Code    44  .\objects\main.o(.text.Sys_Clocks_SystemClkConfig)
+    [Anonymous Symbol]                       0x00100274   Section        0  .\objects\main.o(.text.Sys_Clocks_SystemClkConfig)
+    Sys_DIO_Config                           0x001002a1   Thumb Code    26  .\objects\main.o(.text.Sys_DIO_Config)
+    [Anonymous Symbol]                       0x001002a0   Section        0  .\objects\main.o(.text.Sys_DIO_Config)
+    Sys_GPIO_Toggle                          0x001002bd   Thumb Code    56  .\objects\main.o(.text.Sys_GPIO_Toggle)
+    [Anonymous Symbol]                       0x001002bc   Section        0  .\objects\main.o(.text.Sys_GPIO_Toggle)
+    Sys_ReadNVR4                             0x001002f5   Thumb Code    26  .\objects\system_rsl10.o(.text.Sys_ReadNVR4)
+    [Anonymous Symbol]                       0x001002f4   Section        0  .\objects\system_rsl10.o(.text.Sys_ReadNVR4)
+    [Anonymous Symbol]                       0x00100310   Section        0  .\objects\system_rsl10.o(.text.SystemCoreClockUpdate)
+    [Anonymous Symbol]                       0x00100658   Section        0  .\objects\system_rsl10.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x0010069c   Section        0  .\objects\system_rsl10.o(.text.System_GetTargetForTrim)
+    [Anonymous Symbol]                       0x00100718   Section        0  .\objects\main.o(.text.main)
 
     Global Symbols
 
@@ -795,11 +812,13 @@ Image Symbol Table
     __rt_final_exit                          0x001001a1   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)(.ARM.Collect$$$$0000000F)
     __scatterload                            0x001001a5   Thumb Code    28  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text)
     __scatterload_rt2                        0x001001a5   Thumb Code     0  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)(.text)
-    Initialize                               0x001001c9   Thumb Code    10  .\objects\main.o(.text.Initialize)
-    SystemInit                               0x001001d5   Thumb Code    66  .\objects\system_rsl10.o(.text.SystemInit)
-    main                                     0x00100219   Thumb Code    42  .\objects\main.o(.text.main)
-    Region$$Table$$Base                      0x00100244   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00100244   Number         0  anon$$obj.o(Region$$Table)
+    Initialize                               0x001001c9   Thumb Code   170  .\objects\main.o(.text.Initialize)
+    SystemCoreClockUpdate                    0x00100311   Thumb Code   840  .\objects\system_rsl10.o(.text.SystemCoreClockUpdate)
+    SystemInit                               0x00100659   Thumb Code    66  .\objects\system_rsl10.o(.text.SystemInit)
+    System_GetTargetForTrim                  0x0010069d   Thumb Code   122  .\objects\system_rsl10.o(.text.System_GetTargetForTrim)
+    main                                     0x00100719   Thumb Code    56  .\objects\main.o(.text.main)
+    Region$$Table$$Base                      0x00100750   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00100750   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  .\objects\system_rsl10.o(.bss.systemclock)
     Image$$ARM_LIB_STACK$$ZI$$Limit          0x20006000   Number         0  anon$$obj.o ABSOLUTE
 
@@ -811,52 +830,60 @@ Memory Map of the image
 
   Image Entry point : 0x00100191
 
-  Load Region SECTIONS (Base: 0x00100000, Size: 0x00000244, Max: 0xffffffff, ABSOLUTE)
+  Load Region SECTIONS (Base: 0x00100000, Size: 0x00000750, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region FLASH (Exec base: 0x00100000, Load base: 0x00100000, Size: 0x00000244, Max: 0x0005f000, ABSOLUTE)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x00100000   0x00100000   0x00000190   Code   RO          253    RESET               .\objects\startup_rsl10.o
-    0x00100190   0x00100190   0x00000000   Code   RO          385  * .ARM.Collect$$$$00000000  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)
-    0x00100190   0x00100190   0x00000004   Code   RO          408    .ARM.Collect$$$$00000003  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
-    0x00100194   0x00100194   0x00000004   Code   RO          411    .ARM.Collect$$$$00000004  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)
-    0x00100198   0x00100198   0x00000000   Code   RO          413    .ARM.Collect$$$$00000008  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)
-    0x00100198   0x00100198   0x00000000   Code   RO          415    .ARM.Collect$$$$0000000A  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)
-    0x00100198   0x00100198   0x00000008   Code   RO          416    .ARM.Collect$$$$0000000B  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)
-    0x001001a0   0x001001a0   0x00000000   Code   RO          418    .ARM.Collect$$$$0000000D  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)
-    0x001001a0   0x001001a0   0x00000000   Code   RO          420    .ARM.Collect$$$$0000000F  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)
-    0x001001a0   0x001001a0   0x00000004   Code   RO          409    .ARM.Collect$$$$00002714  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
-    0x001001a4   0x001001a4   0x00000024   Code   RO          433    .text               C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)
-    0x001001c8   0x001001c8   0x0000000a   Code   RO            4    .text.Initialize    .\objects\main.o
-    0x001001d2   0x001001d2   0x00000002   PAD
-    0x001001d4   0x001001d4   0x00000042   Code   RO          264    .text.SystemInit    .\objects\system_rsl10.o
-    0x00100216   0x00100216   0x00000002   PAD
-    0x00100218   0x00100218   0x0000002a   Code   RO            6    .text.main          .\objects\main.o
-    0x00100242   0x00100242   0x00000002   PAD
-    0x00100244   0x00100244   0x00000000   Data   RO          436    Region$$Table       anon$$obj.o
-
-
-    Execution Region SYSTEMCLOCK (Exec base: 0x20000000, Load base: 0x00100244, Size: 0x00000004, Max: 0x00000004, ABSOLUTE, UNINIT)
+    Execution Region FLASH (Exec base: 0x00100000, Load base: 0x00100000, Size: 0x00000750, Max: 0x0005f000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000        -       0x00000004   Zero   RW          268    .bss.systemclock    .\objects\system_rsl10.o
+    0x00100000   0x00100000   0x00000190   Code   RO          259    RESET               .\objects\startup_rsl10.o
+    0x00100190   0x00100190   0x00000000   Code   RO          391  * .ARM.Collect$$$$00000000  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry.o)
+    0x00100190   0x00100190   0x00000004   Code   RO          414    .ARM.Collect$$$$00000003  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
+    0x00100194   0x00100194   0x00000004   Code   RO          417    .ARM.Collect$$$$00000004  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry5.o)
+    0x00100198   0x00100198   0x00000000   Code   RO          419    .ARM.Collect$$$$00000008  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry7b.o)
+    0x00100198   0x00100198   0x00000000   Code   RO          421    .ARM.Collect$$$$0000000A  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry8b.o)
+    0x00100198   0x00100198   0x00000008   Code   RO          422    .ARM.Collect$$$$0000000B  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry9a.o)
+    0x001001a0   0x001001a0   0x00000000   Code   RO          424    .ARM.Collect$$$$0000000D  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry10a.o)
+    0x001001a0   0x001001a0   0x00000000   Code   RO          426    .ARM.Collect$$$$0000000F  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry11a.o)
+    0x001001a0   0x001001a0   0x00000004   Code   RO          415    .ARM.Collect$$$$00002714  C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(entry4.o)
+    0x001001a4   0x001001a4   0x00000024   Code   RO          439    .text               C:\Keil_v5\ARM\ARMCLANG\Bin\..\lib\armlib\mc_w.l(init.o)
+    0x001001c8   0x001001c8   0x000000aa   Code   RO            4    .text.Initialize    .\objects\main.o
+    0x00100272   0x00100272   0x00000002   PAD
+    0x00100274   0x00100274   0x0000002c   Code   RO            6    .text.Sys_Clocks_SystemClkConfig  .\objects\main.o
+    0x001002a0   0x001002a0   0x0000001a   Code   RO            8    .text.Sys_DIO_Config  .\objects\main.o
+    0x001002ba   0x001002ba   0x00000002   PAD
+    0x001002bc   0x001002bc   0x00000038   Code   RO           12    .text.Sys_GPIO_Toggle  .\objects\main.o
+    0x001002f4   0x001002f4   0x0000001a   Code   RO          268    .text.Sys_ReadNVR4  .\objects\system_rsl10.o
+    0x0010030e   0x0010030e   0x00000002   PAD
+    0x00100310   0x00100310   0x00000348   Code   RO          272    .text.SystemCoreClockUpdate  .\objects\system_rsl10.o
+    0x00100658   0x00100658   0x00000042   Code   RO          270    .text.SystemInit    .\objects\system_rsl10.o
+    0x0010069a   0x0010069a   0x00000002   PAD
+    0x0010069c   0x0010069c   0x0000007a   Code   RO          266    .text.System_GetTargetForTrim  .\objects\system_rsl10.o
+    0x00100716   0x00100716   0x00000002   PAD
+    0x00100718   0x00100718   0x00000038   Code   RO           10    .text.main          .\objects\main.o
+    0x00100750   0x00100750   0x00000000   Data   RO          442    Region$$Table       anon$$obj.o
 
 
-    Execution Region DRAM (Exec base: 0x20000008, Load base: 0x00100244, Size: 0x00000000, Max: 0x000057f8, ABSOLUTE)
+    Execution Region SYSTEMCLOCK (Exec base: 0x20000000, Load base: 0x00100750, Size: 0x00000004, Max: 0x00000004, ABSOLUTE, UNINIT)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000        -       0x00000004   Zero   RW          274    .bss.systemclock    .\objects\system_rsl10.o
+
+
+    Execution Region DRAM (Exec base: 0x20000008, Load base: 0x00100750, Size: 0x00000000, Max: 0x000057f8, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region ARM_LIB_HEAP (Exec base: 0x20005800, Load base: 0x00100244, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+    Execution Region ARM_LIB_HEAP (Exec base: 0x20005800, Load base: 0x00100750, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20005800        -       0x00000400   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
 
 
-    Execution Region ARM_LIB_STACK (Exec base: 0x20005c00, Load base: 0x00100244, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+    Execution Region ARM_LIB_STACK (Exec base: 0x20005c00, Load base: 0x00100750, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -870,14 +897,14 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-        52          0          0          0          0       2113   .\objects\main.o
+       352          0          0          0          0       6107   .\objects\main.o
        400        364          0          0          0        800   .\objects\startup_rsl10.o
-        66          0          0          0          4       5186   .\objects\system_rsl10.o
+      1054          6          0          0          4       5186   .\objects\system_rsl10.o
 
     ----------------------------------------------------------------------
-       524        364          0          0       2052       8099   Object Totals
+      1816        370          0          0       2052      12093   Object Totals
          0          0          0          0       2048          0   (incl. Generated)
-         6          0          0          0          0          0   (incl. Padding)
+        10          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -913,15 +940,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-       580        380          0          0       2052       8095   Grand Totals
-       580        380          0          0       2052       8095   ELF Image Totals
-       580        380          0          0          0          0   ROM Totals
+      1872        386          0          0       2052      12089   Grand Totals
+      1872        386          0          0       2052      12089   ELF Image Totals
+      1872        386          0          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                  580 (   0.57kB)
+    Total RO  Size (Code + RO Data)                 1872 (   1.83kB)
     Total RW  Size (RW Data + ZI Data)              2052 (   2.00kB)
-    Total ROM Size (Code + RO Data + RW Data)        580 (   0.57kB)
+    Total ROM Size (Code + RO Data + RW Data)       1872 (   1.83kB)
 
 ==============================================================================
 

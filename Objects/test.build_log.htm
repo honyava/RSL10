@@ -27,28 +27,9 @@ Project File Date:  09/10/2023
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-compiling rsl10_sys_dma.c...
-compiling rsl10_romvect.c...
-compiling rsl10_sys_audio.c...
-compiling rsl10_sys_flash.c...
-compiling rsl10_sys_asrc.c...
 compiling main.c...
-compiling rsl10_sys_adc.c...
-compiling rsl10_sys_power.c...
-compiling rsl10_sys_rffe.c...
-compiling rsl10_sys_clocks.c...
-compiling rsl10_sys_crc.c...
-compiling rsl10_sys_power_modes.c...
-compiling rsl10_sys_version.c...
-compiling rsl10_sys_uart.c...
-compiling rsl10_sys_timers.c...
-compiling SEGGER_RTT_printf.c...
-compiling printf.c...
-compiling system_rsl10.c...
-compiling rsl10_protocol.c...
-compiling SEGGER_RTT.c...
 linking...
-Program Size: Code=580 RO-data=0 RW-data=0 ZI-data=2052  
+Program Size: Code=1872 RO-data=0 RW-data=0 ZI-data=2052  
 FromELF: creating hex file...
 ".\Objects\test.axf" - 0 Error(s), 0 Warning(s).
 
@@ -83,66 +64,66 @@ Package Vendor: ONSemiconductor
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: ONSemiconductor::Device:Libraries:System:source:3.8.801
-      Include file:  include\rsl10_sys_bbif.h
-      Include file:  include\rsl10_sys_ip.h
-      Include file:  include\rsl10_sys_asrc.h
       Include file:  include\rsl10_sys_audio.h
-      Include file:  include\rsl10_sys_crc.h
-      Include file:  include\rsl10_sys_adc.h
-      Include file:  include\rsl10_sys_dio.h
-      Include file:  include\rsl10_sys_flash.h
-      Include file:  include\rsl10_sys_pcm.h
       Include file:  include\rsl10_sys_audiosink.h
-      Include file:  include\rsl10_sys_power.h
-      Include file:  include\rsl10_sys_cm3.h
+      Include file:  include\rsl10_sys_adc.h
+      Include file:  include\rsl10_sys_asrc.h
       Include file:  include\rsl10_sys_clocks.h
-      Include file:  include\rsl10_sys_dma.h
+      Include file:  include\rsl10_sys_cm3.h
+      Include file:  include\rsl10_sys_bbif.h
       Include file:  include\rsl10_sys_aes.h
-      Include file:  include\rsl10_sys_pwm.h
-      Include file:  include\rsl10_sys_rffe.h
-      Include file:  include\rsl10_sys_gpio.h
-      Include file:  include\rsl10_sys_power_modes.h
-      Include file:  include\rsl10_sys_rtc.h
-      Include file:  include\rsl10_sys_i2c.h
-      Include file:  include\rsl10_sys_lpdsp32.h
+      Include file:  include\rsl10_sys_crc.h
+      Include file:  include\rsl10_sys_dio.h
       Include file:  include\rsl10_romvect.h
-      Include file:  include\rsl10_sys_spi.h
-      Source file:   source\firmware\syslib\code\rsl10_sys_version.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_power.c
       Source file:   source\firmware\syslib\code\rsl10_sys_rffe.c
-      Include file:  include\rsl10_sys_uart.h
-      Include file:  include\rsl10_sys_timers.h
-      Source file:   source\firmware\syslib\code\rsl10_sys_asrc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_uart.c
+      Include file:  include\rsl10_sys_pwm.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_audio.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_version.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_timers.c
       Source file:   source\firmware\syslib\code\rsl10_protocol.c
+      Include file:  include\rsl10_sys_rtc.h
       Include file:  include\rsl10_sys_watchdog.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_power_modes.c
+      Include file:  include\rsl10_sys_spi.h
+      Include file:  include\rsl10_sys_power.h
       Include file:  include\rsl10_protocol.h
+      Source file:   source\firmware\syslib\code\rsl10_romvect.c
+      Include file:  include\rsl10_sys_pcm.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_asrc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_flash.c
+      Include file:  include\rsl10_sys_power_modes.h
       Source file:   source\firmware\syslib\code\rsl10_sys_clocks.c
       Source file:   source\firmware\syslib\code\rsl10_sys_crc.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_dma.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_timers.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_power.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_power_modes.c
-      Source file:   source\firmware\syslib\code\rsl10_romvect.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_flash.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_uart.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_audio.c
+      Include file:  include\rsl10_sys_dma.h
+      Include file:  include\rsl10_sys_i2c.h
+      Include file:  include\rsl10_sys_flash.h
+      Include file:  include\rsl10_sys_lpdsp32.h
+      Include file:  include\rsl10_sys_rffe.h
+      Include file:  include\rsl10_sys_gpio.h
+      Include file:  include\rsl10_sys_ip.h
+      Include file:  include\rsl10_sys_timers.h
+      Include file:  include\rsl10_sys_uart.h
       Source file:   source\firmware\syslib\code\rsl10_sys_adc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_dma.c
 
    * Component: ONSemiconductor::Device:Startup:source:3.8.801
-      Source file:   source\firmware\cmsis\source\ARM\startup_rsl10.s
       Source file:   source\firmware\cmsis\source\system_rsl10.c
+      Source file:   source\firmware\cmsis\source\ARM\startup_rsl10.s
       Include file:  source\firmware\drivers\RTE_config\RTE_Device.h
 
    * Component: ONSemiconductor::Utility:IO:Printf wrapper:3.8.801
-      Include file:  source\firmware\printf\printf.h
       Source file:   source\firmware\printf\printf.c
+      Include file:  source\firmware\printf\printf.h
 
    * Component: ONSemiconductor::Utility:IO:SEGGER RTT:3.8.801
       Source file:   source\firmware\rtt\SEGGER_RTT_printf.c
-      Include file:  source\firmware\rtt\SEGGER_RTT_Conf.h
-      Source file:   source\firmware\rtt\SEGGER_RTT_ASM_ARMv7M.S
       Include file:  source\firmware\rtt\SEGGER_RTT.h
       Source file:   source\firmware\rtt\SEGGER_RTT.c
-Build Time Elapsed:  00:00:02
+      Include file:  source\firmware\rtt\SEGGER_RTT_Conf.h
+      Source file:   source\firmware\rtt\SEGGER_RTT_ASM_ARMv7M.S
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
