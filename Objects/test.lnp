@@ -1,5 +1,7 @@
 --cpu Cortex-M3
 ".\objects\main.o"
+".\objects\interrupt.o"
+".\objects\my_func.o"
 ".\objects\rsl10_romvect.o"
 ".\objects\rsl10_sys_adc.o"
 ".\objects\rsl10_sys_asrc.o"

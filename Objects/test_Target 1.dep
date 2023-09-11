@@ -1,7 +1,7 @@
 Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
-F (.\main.c)(0x64FDEB9E)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../RSL10 -fno-short-wchar -fshort-enums-I./RTE/Device/RSL10-I./RTE/Utility/RSL10-I./RTE/_Target_1-IC:/Users/retin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/printf-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/rtt-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -DRSL10_CID="101" -DUSE_STDPERIPH_DRIVER-o ./objects/main.o -MD)
-I (..\RSL10\main.h)(0x64FDE54D)
+F (.\main.c)(0x64FF5AC9)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../RSL10 -fno-short-wchar -fshort-enums-I./RTE/Device/RSL10-I./RTE/Utility/RSL10-I./RTE/_Target_1-IC:/Users/retin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/printf-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/rtt-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -DRSL10_CID="101" -DUSE_STDPERIPH_DRIVER-o ./objects/main.o -MD)
+I (..\RSL10\main.h)(0x64FF5A0B)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\RSL10.h)(0x649AD32E)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h)(0x649AD32E)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
@@ -46,7 +46,99 @@ I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_timers.h)(0x649AD330)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_uart.h)(0x649AD330)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_watchdog.h)(0x649AD330)
-F (.\main.h)(0x64FDE54D)()
+F (.\main.h)(0x64FF5A0B)()
+F (.\interrupt.c)(0x64FF5D43)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../RSL10 -fno-short-wchar -fshort-enums-I./RTE/Device/RSL10-I./RTE/Utility/RSL10-I./RTE/_Target_1-IC:/Users/retin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/printf-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/rtt-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -DRSL10_CID="101" -DUSE_STDPERIPH_DRIVER-o ./objects/interrupt.o -MD)
+I (..\RSL10\main.h)(0x64FF5A0B)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\RSL10.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\system_rsl10.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_start.h)(0x649AD32E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x60354E06)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_hw.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_hw_cid101.h)(0x649AD33E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_reg.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_map.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_map_nvr.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_romvect.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_dio.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_aes.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_asrc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_audio.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_audiosink.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_bbif.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_clocks.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_cm3.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_crc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_dma.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_flash.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_gpio.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_i2c.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_ip.h)(0x649AD330)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60354E20)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_lpdsp32.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_adc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_pcm.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_power.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_power_modes.h)(0x649AD330)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x60354E1A)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_pwm.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_rffe.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_rtc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_spi.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_timers.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_uart.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_watchdog.h)(0x649AD330)
+F (.\inc\my_func.c)(0x64FF5F82)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../RSL10 -fno-short-wchar -fshort-enums-I./RTE/Device/RSL10-I./RTE/Utility/RSL10-I./RTE/_Target_1-IC:/Users/retin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/printf-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/rtt-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -DRSL10_CID="101" -DUSE_STDPERIPH_DRIVER-o ./objects/my_func.o -MD)
+I (..\RSL10\main.h)(0x64FF5A0B)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\RSL10.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\system_rsl10.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_start.h)(0x649AD32E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x60354E06)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_hw.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_hw_cid101.h)(0x649AD33E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_reg.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_map.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_map_nvr.h)(0x649AD32E)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_romvect.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_dio.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_aes.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_asrc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_audio.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_audiosink.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_bbif.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_clocks.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_cm3.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_crc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_dma.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_flash.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_gpio.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_i2c.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_ip.h)(0x649AD330)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60354E20)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_lpdsp32.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_adc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_pcm.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_power.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_power_modes.h)(0x649AD330)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x60354E1A)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_pwm.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_rffe.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_rtc.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_spi.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_timers.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_uart.h)(0x649AD330)
+I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_watchdog.h)(0x649AD330)
 F (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\source\firmware\syslib\code\rsl10_romvect.c)(0x649AFCB0)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../RSL10 -fno-short-wchar -fshort-enums-I./RTE/Device/RSL10-I./RTE/Utility/RSL10-I./RTE/_Target_1-IC:/Users/retin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/include-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/printf-IC:/Users/retin/AppData/Local/Arm/Packs/ONSemiconductor/RSL10/3.8.801/source/firmware/rtt-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -DRSL10_CID="101" -DUSE_STDPERIPH_DRIVER-o ./objects/rsl10_romvect.o -MD)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10.h)(0x649AD32E)
 I (C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h)(0x649AD32E)
