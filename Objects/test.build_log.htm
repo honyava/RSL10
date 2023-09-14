@@ -22,14 +22,14 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 C:\Users\retin\Desktop\My_Git\RSL10\test.uvprojx
-Project File Date:  09/11/2023
+Project File Date:  09/12/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-compiling my_func.c...
+compiling main.c...
 linking...
-Program Size: Code=2072 RO-data=0 RW-data=0 ZI-data=2052  
+Program Size: Code=13078 RO-data=62 RW-data=4 ZI-data=6520  
 FromELF: creating hex file...
 ".\Objects\test.axf" - 0 Error(s), 0 Warning(s).
 
@@ -41,88 +41,126 @@ Package Vendor: ARM
                 CMSIS (Common Microcontroller Software Interface Standard)
    * Component: CORE Version: 5.6.0
 
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.4.6.pack
+                ARM.CMSIS-FreeRTOS.10.4.6
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.4.6
+   * Component: Core Variant: Cortex-M Version: 10.4.6
+   * Component: Coroutines Version: 10.4.6
+   * Component: Event Groups Version: 10.4.6
+   * Component: Heap Variant: Heap_4 Version: 10.4.6
+   * Component: Message Buffer Version: 10.4.6
+   * Component: Stream Buffer Version: 10.4.6
+   * Component: Timers Version: 10.4.6
+
 Package Vendor: ONSemiconductor
                 www.onsemi.com/ONSemiconductor.RSL10.3.8.801.pack
                 ONSemiconductor.RSL10.3.8.801
                 ON Semiconductor RSL10 Device Family Pack
    * Component: System Variant: source Version: 3.8.801
    * Component: Startup Variant: source Version: 3.8.801
-   * Component: Printf wrapper Version: 3.8.801
-   * Component: SEGGER RTT Version: 3.8.801
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\Device\RSL10
-  .\RTE\Utility\RSL10
+  .\RTE\RTOS
   .\RTE\_Target_1
+  C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\include
+  C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\portable\GCC\ARM_CM3
   C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\source\firmware\printf
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\source\firmware\rtt
 
 <h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.4.6
+      Include file:  Config\ARMCM\FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.6
+      Include file:  Source\include\queue.h
+      Source file:   Source\tasks.c
+      Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\task.h
+      Source file:   Source\portable\GCC\ARM_CM3\port.c
+      Include file:  Source\include\semphr.h
+      Source file:   Source\queue.c
+      Source file:   Source\list.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:10.4.6
+      Source file:   Source\croutine.c
+      Include file:  Source\include\croutine.h
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:10.4.6
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.4.6
+      Source file:   Source\portable\MemMang\heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Message Buffer:10.4.6
+      Source file:   Source\stream_buffer.c
+      Include file:  Source\include\message_buffer.h
+
+   * Component: ARM.FreeRTOS::RTOS:Stream Buffer:10.4.6
+      Source file:   Source\stream_buffer.c
+      Include file:  Source\include\stream_buffer.h
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.4.6
+      Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
 
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: ONSemiconductor::Device:Libraries:System:source:3.8.801
+      Include file:  include\rsl10_sys_aes.h
+      Include file:  include\rsl10_romvect.h
+      Include file:  include\rsl10_sys_adc.h
+      Include file:  include\rsl10_sys_asrc.h
+      Include file:  include\rsl10_sys_audio.h
+      Include file:  include\rsl10_sys_bbif.h
+      Include file:  include\rsl10_sys_clocks.h
+      Include file:  include\rsl10_sys_cm3.h
+      Include file:  include\rsl10_sys_crc.h
+      Include file:  include\rsl10_sys_audiosink.h
+      Include file:  include\rsl10_sys_watchdog.h
+      Include file:  include\rsl10_sys_dma.h
+      Include file:  include\rsl10_sys_power_modes.h
+      Source file:   source\firmware\syslib\code\rsl10_romvect.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_clocks.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_audio.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_crc.c
+      Include file:  include\rsl10_sys_flash.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_asrc.c
+      Include file:  include\rsl10_sys_i2c.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_adc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_dma.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_flash.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_power.c
+      Include file:  include\rsl10_sys_dio.h
+      Include file:  include\rsl10_protocol.h
+      Include file:  include\rsl10_sys_gpio.h
+      Include file:  include\rsl10_sys_uart.h
+      Include file:  include\rsl10_sys_pwm.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_power_modes.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_timers.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_uart.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_version.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_rffe.c
+      Include file:  include\rsl10_sys_pcm.h
       Include file:  include\rsl10_sys_rffe.h
       Include file:  include\rsl10_sys_rtc.h
-      Include file:  include\rsl10_sys_adc.h
-      Include file:  include\rsl10_sys_timers.h
-      Include file:  include\rsl10_sys_spi.h
-      Include file:  include\rsl10_sys_audio.h
-      Include file:  include\rsl10_sys_uart.h
-      Include file:  include\rsl10_sys_watchdog.h
-      Include file:  include\rsl10_sys_clocks.h
-      Include file:  include\rsl10_sys_i2c.h
-      Include file:  include\rsl10_sys_bbif.h
-      Include file:  include\rsl10_sys_dma.h
-      Include file:  include\rsl10_sys_asrc.h
-      Include file:  include\rsl10_sys_audiosink.h
       Include file:  include\rsl10_sys_ip.h
+      Include file:  include\rsl10_sys_timers.h
       Include file:  include\rsl10_sys_lpdsp32.h
       Include file:  include\rsl10_sys_power.h
-      Include file:  include\rsl10_sys_cm3.h
-      Include file:  include\rsl10_sys_pcm.h
-      Include file:  include\rsl10_sys_dio.h
-      Include file:  include\rsl10_sys_power_modes.h
-      Include file:  include\rsl10_sys_gpio.h
-      Include file:  include\rsl10_sys_pwm.h
-      Include file:  include\rsl10_romvect.h
-      Include file:  include\rsl10_sys_aes.h
-      Include file:  include\rsl10_sys_crc.h
-      Include file:  include\rsl10_sys_flash.h
-      Source file:   source\firmware\syslib\code\rsl10_sys_dma.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_asrc.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_power.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_clocks.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_uart.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_rffe.c
+      Include file:  include\rsl10_sys_spi.h
       Source file:   source\firmware\syslib\code\rsl10_protocol.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_adc.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_crc.c
-      Source file:   source\firmware\syslib\code\rsl10_romvect.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_power_modes.c
-      Include file:  include\rsl10_protocol.h
-      Source file:   source\firmware\syslib\code\rsl10_sys_timers.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_flash.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_version.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_audio.c
 
    * Component: ONSemiconductor::Device:Startup:source:3.8.801
-      Source file:   source\firmware\cmsis\source\system_rsl10.c
-      Include file:  source\firmware\drivers\RTE_config\RTE_Device.h
       Source file:   source\firmware\cmsis\source\ARM\startup_rsl10.s
-
-   * Component: ONSemiconductor::Utility:IO:Printf wrapper:3.8.801
-      Include file:  source\firmware\printf\printf.h
-      Source file:   source\firmware\printf\printf.c
-
-   * Component: ONSemiconductor::Utility:IO:SEGGER RTT:3.8.801
-      Include file:  source\firmware\rtt\SEGGER_RTT.h
-      Include file:  source\firmware\rtt\SEGGER_RTT_Conf.h
-      Source file:   source\firmware\rtt\SEGGER_RTT.c
-      Source file:   source\firmware\rtt\SEGGER_RTT_printf.c
-      Source file:   source\firmware\rtt\SEGGER_RTT_ASM_ARMv7M.S
+      Include file:  source\firmware\drivers\RTE_config\RTE_Device.h
+      Source file:   source\firmware\cmsis\source\system_rsl10.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

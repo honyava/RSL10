@@ -1,5 +1,6 @@
 #include <RSL10.h>
-
+#include <FreeRTOS.h>
+#include <task.h>
 
 
 /* DIO number that is used for easy re-flashing (recovery mode) */

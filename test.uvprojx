@@ -401,12 +401,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>inc</GroupName>
+          <GroupName>src</GroupName>
           <Files>
             <File>
               <FileName>my_func.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\inc\my_func.c</FilePath>
+              <FilePath>.\src\my_func.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -417,7 +417,7 @@
           <GroupName>::Device</GroupName>
         </Group>
         <Group>
-          <GroupName>::Utility</GroupName>
+          <GroupName>::RTOS</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -426,6 +426,54 @@
   <RTE>
     <apis/>
     <components>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Config" Cvariant="FreeRTOS" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Config Native">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Core" Cvariant="Cortex-M" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Core CM">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Coroutines" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Coroutines">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Event Groups" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Event Groups">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Heap" Cvariant="Heap_4" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Heap">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Message Buffer" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Message Buffer">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Stream Buffer" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Stream Buffer">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Timers" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Timers">
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
         <targetInfos>
@@ -439,18 +487,6 @@
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="RSL10_Condition">
-        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
-      </component>
-      <component Cclass="Utility" Cgroup="IO" Csub="Printf wrapper" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="SEGGER_RTT_or_USART_Driver_Condition">
-        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
-      </component>
-      <component Cclass="Utility" Cgroup="IO" Csub="SEGGER RTT" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="RSL10_Condition">
         <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
@@ -498,13 +534,19 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="header" name="source\firmware\rtt\SEGGER_RTT_Conf.h" version="1.0.0">
-        <instance index="0">RTE\Utility\RSL10\SEGGER_RTT_Conf.h</instance>
-        <component Cclass="Utility" Cgroup="IO" Csub="SEGGER RTT" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="RSL10_Condition"/>
-        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+      <file attr="config" category="header" condition="CoreM" name="Config\ARMCM\FreeRTOSConfig.h" version="10.3.0">
+        <instance index="0">RTE\RTOS\FreeRTOSConfig.h</instance>
+        <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Config" Cvariant="FreeRTOS" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Config Native"/>
+        <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
+      </file>
+      <file attr="config" category="header" name="source\firmware\rtt\SEGGER_RTT_Conf.h" version="1.0.0">
+        <instance index="0" removed="1">RTE\Utility\RSL10\SEGGER_RTT_Conf.h</instance>
+        <component Cclass="Utility" Cgroup="IO" Csub="SEGGER RTT" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="RSL10_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos/>
       </file>
     </files>
   </RTE>
