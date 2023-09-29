@@ -1,4 +1,4 @@
-./objects/main.o: main.c ..\RSL10\main.h ..\RSL10\my_func.h \
+./objects/ble_diss.o: RTE\Device\RSL10\ble_diss.c \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h \
@@ -43,18 +43,31 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_timers.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_uart.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_watchdog.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_protocol.h \
+  RTE\Device\RSL10\ble_diss.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\diss_task.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_task.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf_types.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\att.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\compiler.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_timer.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_config.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwble_config.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_config.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\rwble_hl_config.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\rwble_hl_error.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\rwprf_config.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_msg.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\arch.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\compiler.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\ll.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_config.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_list.h \
   RTE\Device\RSL10\ble_gap.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_ke.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_bb.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwble_config.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_config.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwble_config.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\rwble_hl_config.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\rwble_hl_error.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\rwprf_config.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwble.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\compiler.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_error.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_config.h \
@@ -70,8 +83,6 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\reg_blecore.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\_reg_blecore.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\arch.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\ll.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\reg_access.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_utils.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_bt.h \
@@ -122,12 +133,6 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\dbg_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_task.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_config.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\compiler.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_msg.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\arch.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_config.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_list.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\dbg_swdiag.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\dbg_mwsgen.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\ea.h \
@@ -172,7 +177,6 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_mem.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\hci.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_bt.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rf.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwip_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke.h \
@@ -186,22 +190,16 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapm_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gap.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapc_task.h \
-  RTE\Device\RSL10\ble_gatt.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gattm_task.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\att.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gattc_task.h \
-  RTE\Device\RSL10\msg_handler.h RTE\Device\RSL10\ble_bass.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\bass_task.h \
+  RTE\Device\RSL10\msg_handler.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf_utils.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf_types.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_timer.h \
-  RTE\Device\RSL10\ble_diss.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\diss_task.h \
-  RTE\Device\RSL10\ble_hrps.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrps.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrp_common.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapm_task.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrps_task.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gattc_task.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapc.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\smpc.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapc_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\attm.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_error.h \
-  ..\RSL10\app_bass.h
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapm_task.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\diss.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf.h

@@ -1,4 +1,5 @@
-./objects/main.o: main.c ..\RSL10\main.h ..\RSL10\my_func.h \
+./objects/ble_gap.o: RTE\Device\RSL10\ble_gap.c \
+  RTE\Device\RSL10\ble_gap.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h \
@@ -43,8 +44,6 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_timers.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_uart.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_sys_watchdog.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_protocol.h \
-  RTE\Device\RSL10\ble_gap.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_ke.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_bb.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\rwble_config.h \
@@ -190,18 +189,7 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gattm_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\att.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gattc_task.h \
-  RTE\Device\RSL10\msg_handler.h RTE\Device\RSL10\ble_bass.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\bass_task.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf_types.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\kernel\ke_timer.h \
-  RTE\Device\RSL10\ble_diss.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\diss_task.h \
-  RTE\Device\RSL10\ble_hrps.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrps.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrp_common.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\prf.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\gapm_task.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrps_task.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\attm.h \
-  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_error.h \
-  ..\RSL10\app_bass.h
+  RTE\Device\RSL10\ble_l2c.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_protocol.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_flash_rom.h \
+  C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_flash_common.h

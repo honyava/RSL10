@@ -1,4 +1,4 @@
-./objects/main.o: main.c ..\RSL10\main.h ..\RSL10\my_func.h \
+./objects/app_bass.o: app_bass.c ..\RSL10\main.h ..\RSL10\my_func.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\rsl10_vectors.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h \
@@ -204,4 +204,4 @@
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\profiles\hrps_task.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\ble\attm.h \
   C:\Users\retin\AppData\Local\Arm\Packs\ONSemiconductor\RSL10\3.8.801\include\bb\co_error.h \
-  ..\RSL10\app_bass.h
+  ..\RSL10\app_bass.h ..\RSL10\app_bass.h

@@ -337,7 +337,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls>-fno-short-wchar -fshort-enums</MiscControls>
-              <Define>RSL10_CID=101, USE_STDPERIPH_DRIVER</Define>
+              <Define>RSL10_CID=101 CFG_PRF_DISS=1 CFG_PRF_HRPS=1 SECURE_CONNECTION APP_BONDLIST_SIZE=28 CFG_BOND_LIST_IN_NVR2=1 CFG_BLE=1 CFG_ALLROLES=1 CFG_APP CFG_APP_BATT CFG_ATTS=1 CFG_CON=8 CFG_EMB=1 CFG_HOST=1 CFG_RF_ATLAS=1 CFG_ALLPRF=1 CFG_PRF=1 CFG_NB_PRF=8 CFG_CHNL_ASSESS=1 CFG_SEC_CON=1 CFG_EXT_DB CFG_PRF_BASS=1 _RTE_, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>..\RSL10</IncludePath>
             </VariousControls>
@@ -355,7 +355,7 @@
             <ClangAsOpt>1</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>RSL10_CID=101, USE_STDPERIPH_DRIVER</Define>
+              <Define>RSL10_CID=101 CFG_PRF_DISS=1 CFG_PRF_HRPS=1 SECURE_CONNECTION APP_BONDLIST_SIZE=28 CFG_BOND_LIST_IN_NVR2=1 CFG_BLE=1 CFG_ALLROLES=1 CFG_APP CFG_APP_BATT CFG_ATTS=1 CFG_CON=8 CFG_EMB=1 CFG_HOST=1 CFG_RF_ATLAS=1 CFG_ALLPRF=1 CFG_PRF=1 CFG_NB_PRF=8 CFG_CHNL_ASSESS=1 CFG_SEC_CON=1 CFG_EXT_DB CFG_PRF_BASS=1 _RTE_, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>..\RSL10</IncludePath>
             </VariousControls>
@@ -384,14 +384,14 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
               <FileName>main.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\main.h</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
             <File>
               <FileName>interrupt.c</FileName>
@@ -404,9 +404,29 @@
           <GroupName>src</GroupName>
           <Files>
             <File>
+              <FileName>app_bass.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app_bass.c</FilePath>
+            </File>
+            <File>
               <FileName>my_func.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\my_func.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>inc</GroupName>
+          <Files>
+            <File>
+              <FileName>my_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\my_func.h</FilePath>
+            </File>
+            <File>
+              <FileName>app_bass.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\app_bass.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -424,7 +444,14 @@
   </Targets>
 
   <RTE>
-    <apis/>
+    <apis>
+      <api Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" condition="RSL10_Condition" exclusive="0">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </api>
+    </apis>
     <components>
       <component Cbundle="FreeRTOS" Cclass="RTOS" Cgroup="Config" Cvariant="FreeRTOS" Cvendor="ARM" Cversion="10.4.6" condition="FreeRTOS Config Native">
         <package name="CMSIS-FreeRTOS" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="ARM" version="10.4.6"/>
@@ -480,6 +507,54 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
+      <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Stack" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="Kernel_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="Kernel" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="System_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Bluetooth Profiles" Csub="BASS" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Bluetooth Profiles" Csub="BLPS" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Bluetooth Profiles" Csub="DISS" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Bluetooth Profiles" Csub="HRPS" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Libraries" Csub="Calibrate" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="System_Condition">
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
       <component Cclass="Device" Cgroup="Libraries" Csub="System" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="CMSIS_Startup_Condition">
         <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
         <targetInfos>
@@ -497,6 +572,118 @@
       <file attr="config" category="header" name="source\firmware\drivers\RTE_config\RTE_Device.h" version="1.0.0">
         <instance index="0">RTE\Device\RSL10\RTE_Device.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="RSL10_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" condition="BASS_Profile_Condition" name="source\firmware\ble_abstraction_layer\ble_profiles\source\ble_bass.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_bass.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" condition="BASS_Profile_Condition" name="source\firmware\ble_abstraction_layer\ble_profiles\include\ble_bass.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_bass.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" condition="DISS_Profile_Condition" name="source\firmware\ble_abstraction_layer\ble_profiles\source\ble_diss.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_diss.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" condition="DISS_Profile_Condition" name="source\firmware\ble_abstraction_layer\ble_profiles\include\ble_diss.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_diss.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="source\firmware\ble_abstraction_layer\ble\source\ble_gap.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_gap.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="source\firmware\ble_abstraction_layer\ble\include\ble_gap.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_gap.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="source\firmware\ble_abstraction_layer\ble\source\ble_gatt.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_gatt.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="source\firmware\ble_abstraction_layer\ble\include\ble_gatt.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_gatt.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" condition="HRPS_Profile_Condition" name="source\firmware\ble_abstraction_layer\ble_profiles\source\ble_hrps.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_hrps.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" condition="HRPS_Profile_Condition" name="source\firmware\ble_abstraction_layer\ble_profiles\include\ble_hrps.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_hrps.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="source\firmware\ble_abstraction_layer\ble\source\ble_l2c.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_l2c.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="source\firmware\ble_abstraction_layer\ble\include\ble_l2c.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\ble_l2c.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="source\firmware\ble_abstraction_layer\ble\source\msg_handler.c" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\msg_handler.c</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
+        <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="source\firmware\ble_abstraction_layer\ble\include\msg_handler.h" version="1.0.0">
+        <instance index="0">RTE\Device\RSL10\msg_handler.h</instance>
+        <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.8.801" condition="BLE_OR_FOTA_Condition"/>
         <package name="RSL10" schemaVersion="1.3" url="www.onsemi.com" vendor="ONSemiconductor" version="3.8.801"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
