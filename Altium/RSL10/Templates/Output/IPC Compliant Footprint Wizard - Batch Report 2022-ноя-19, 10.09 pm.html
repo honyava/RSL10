@@ -1,0 +1,227 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>IPC® Compliant Footprint Wizard Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>IPC® Compliant Footprint Wizard Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">19.11.2022</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">22:09:38</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+</table><a name="IDZL4OCMNXFU1ITHFYHCATRMLLBWVZEKW21EUVELHYNSL2FXPT30B"><h2>Contents</h2></a><p class="contents_level1"><a href="#IDZL4OCMNXFU1ITHFYHCATRMLLBWVZEKW21EUVELHYNSL2FXPT30B">Contents</a></p>
+<p class="contents_level1"><a href="#IDTMYAOACWRSIFJRQRPJL5KLRBSKBJSR50TL5ZVYIKTCLEX0FWXDLN">Processed Source Files</a></p>
+<p class="contents_level2"><a href="#IDISH5QYV5FLSRB033UILOHEB3FLJH1LQFG1RSE0IJN3LXRXX0BLIB"><br></a></p>
+<p class="contents_level1"><a href="#IDJCQ1EV4ZBPQCCPFVEHNSQE2RLSFJWGMCSMUPNHJ4AIVRDMJDS4K">Errors and Warnings for file "D:\YandexDisk\AltiumMain\Library\Footprints\batch\Wound_Inductor.xls"</a></p>
+<p class="contents_level2"><a href="#IDVYBX0S3DYXL3HH5CQD53T0H5XEWPN3CBPJRQRTM5QFOBAEPSGQ4P"><br></a></p><br><a name="IDTMYAOACWRSIFJRQRPJL5KLRBSKBJSR50TL5ZVYIKTCLEX0FWXDLN"><h2>Processed Source Files</h2></a><a name="IDISH5QYV5FLSRB033UILOHEB3FLJH1LQFG1RSE0IJN3LXRXX0BLIB"><table>
+<tr>
+<th class="column1">Source file path</th>
+<th class="column2">Fatal errors</th>
+<th class="column3">Errors</th>
+<th class="column4">Warnings</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:60%; text-align:left]" class="column1">D:\YandexDisk\AltiumMain\Library\Footprints\batch\Wound_Inductor.xls</td>
+<td style="width:13.3%; text-align:centre]" class="column2">0</td>
+<td style="width:13.3%; text-align:centre]" class="column3">1</td>
+<td style="width:13.3%; text-align:centre]" class="column4">1</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJCQ1EV4ZBPQCCPFVEHNSQE2RLSFJWGMCSMUPNHJ4AIVRDMJDS4K"><h2>Errors and Warnings for file "D:\YandexDisk\AltiumMain\Library\Footprints\batch\Wound_Inductor.xls"</h2></a><a name="IDVYBX0S3DYXL3HH5CQD53T0H5XEWPN3CBPJRQRTM5QFOBAEPSGQ4P"><table>
+<tr>
+<th class="column1">Error and Warning Type</th>
+<th class="column2">Affected footprint</th>
+<th class="column3">Description</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:25%; text-align:left]" class="column1">Footprint name conflict</td>
+<td style="width:15%; text-align:left]" class="column2">Package #   1 (SDR1006)</td>
+<td style="width:60%; text-align:left]" class="column3">Warning: Mapped to an existing footprint name "SDR1006" so not added</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:25%; text-align:left]" class="column1">Invalid field value</td>
+<td style="width:15%; text-align:left]" class="column2">Package #   2 (SDR0302)</td>
+<td style="width:60%; text-align:left]" class="column3">Error: Invalid quantity "" in Real field "Z"</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
