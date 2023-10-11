@@ -377,7 +377,7 @@ V=I1
 Style=8192
 
 [Attr]
-ON=-96,-119,VALUE
+ON=-66,-55,VALUE
 V=DC 0 AC 1 0 Sin 2u 1n 1 0 0 0
 Style=8192
 
@@ -542,7 +542,7 @@ Pxs=176,448,240,448
 [Comp]
 Name=Capacitor
 Enable=FALSE
-Px=520,528
+Px=544,568
 Rot=6
 
 [Attr]
@@ -560,13 +560,13 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=496,528,520,528
+Pxs=520,568,544,568
 Enable=FALSE
 
 [Comp]
 Name=Resistor
 Enable=FALSE
-Px=552,576
+Px=576,616
 Rot=5
 
 [Attr]
@@ -584,17 +584,17 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=552,528,600,528
+Pxs=576,568,624,568
 Enable=FALSE
 
 [Wire]
-Pxs=552,576,552,600
+Pxs=576,616,576,640
 Enable=FALSE
 
 [Comp]
 Name=Ground
 Enable=FALSE
-Px=552,600
+Px=576,640
 Rot=7
 
 [Comp]
@@ -861,7 +861,7 @@ Style=8192
 
 [Attr]
 ON=-37,-39,RESISTANCE
-V=250k
+V=510k
 Style=8192
 
 [Attr]
@@ -880,7 +880,7 @@ Style=8192
 
 [Attr]
 ON=-38,-41,RESISTANCE
-V=250k
+V=510k
 Style=8192
 
 [Attr]
@@ -1107,7 +1107,7 @@ V=R9
 Style=8192
 
 [Attr]
-ON=-30,24,RESISTANCE
+ON=-45,24,RESISTANCE
 V=100k
 Style=8192
 
@@ -1378,7 +1378,7 @@ Pxs=1160,256,1160,288
 Pxs=424,424,440,424
 
 [Wire]
-Pxs=520,528,552,528
+Pxs=544,568,576,568
 Enable=FALSE
 
 [Wire]
@@ -1641,7 +1641,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1
+Scale=1.3333333333333333
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -1829,9 +1829,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=413,75
-Scale 3=1
-Px=1398,247
+SB 3=177,67
+Scale 3=1.3333333333333333
+Px=1106,436
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2204,8 +2204,8 @@ ALIGNBOTTOM=No
 [APage]
 Analysis=Transient
 Name="MAIN"
-Height_0=18.106798499424077
-Height_1=33.853925786394896
+Height_0=45.715494151598008
+Height_1=54.284505848401992
 Height_2=21.368201334015748
 Height_3=10.684297520661152
 Height_4=15.986776859504127
@@ -2220,8 +2220,23 @@ w=1
 AliasID1=6
 w2=1
 AliasID2=6
-Pos=12.107500004998835,0.9784134609687829,11.608500004999112,0.821099010370542
-Posm=12.143351800554017
+Pos=2.0205999999998885,0.95514504987495918,2.5055999999998351,0.84474428040173244
+Posm=2.0567867036011078
+Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
+Format=3
+
+[AObject]
+Analysis=Transient
+Object=MeasureH
+Locked=True
+EndPoint=ArrowF
+CBorder=#000080
+w=1
+AliasID1=6
+w2=1
+AliasID2=6
+Pos=0.01960000000000001,0.9006186456372447,0.84160000000000068,0.89892560045909597
+Posm=0.88391608391608412
 Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
 Format=3
 
@@ -2235,8 +2250,8 @@ w=1
 AliasID1=6
 w2=1
 AliasID2=6
-Pos=11.10650000499939,1.2930824454629075,11.598500004999117,0.50680099472633877
-Posm=11.146121883656509
+Pos=1.0755999999999926,0.98049829545959177,1.6055999999999342,0.82138778748404206
+Posm=1.2049861495844876
 Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
 Format=3
 
@@ -2250,23 +2265,8 @@ w=1
 AliasID1=6
 w2=1
 AliasID2=6
-Pos=13.128500004998269,1.3137299082670673,12.647500004998536,0.48688534952617069
-Posm=13.164819944598337
-Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
-Format=3
-
-[AObject]
-Analysis=Transient
-Object=MeasureV
-Locked=True
-EndPoint=ArrowF
-CBorder=#000080
-w=1
-AliasID1=6
-w2=1
-AliasID2=6
-Pos=12.13550000499882,1.1461421813384245,12.637500004998541,0.31830627001801692
-Posm=12.171052631578947
+Pos=0.15960000000000013,0.93905393503385426,0.61860000000000048,0.82871724625658949
+Posm=0.25969529085872578
 Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
 Format=3
 
@@ -2750,8 +2750,8 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=15
-TStart=10
+TMax=5
+TStart=0
 TStep=1e-3
 NPts=1000
 Temp=27
@@ -2768,7 +2768,7 @@ Plt=5
 AliasID=1
 XExp=T
 YExp=v(v2)
-XRng=15,10
+XRng=5
 YRng=1.00015e-6,9.999e-7
 Options=LINEARX,LINEARY
 Range Grid X=1
@@ -2898,7 +2898,7 @@ Plt=2
 AliasID=6
 XExp=T
 YExp=v(ADC)
-XRng=15,10
+XRng=5
 YRng=1.05,0.8
 Options=LINEARX,LINEARY
 Range Grid X=1
@@ -2924,12 +2924,12 @@ Plt=1
 AliasID=5
 XExp=T
 YExp=v(out_f1)
-XRng=15,10
+XRng=150
 YRng=0.95005,0.9498
 Options=LINEARX,LINEARY
-Range Grid X=1
+Range Grid X=30
 Range Grid Y=5e-5
-Enable=Enable
+Enable=DontRun
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -2950,12 +2950,12 @@ Plt=3
 AliasID=2
 XExp=T
 YExp=v(out_a)
-XRng=15,10
+XRng=150
 YRng=0.902,0.8995
 Options=LINEARX,LINEARY
-Range Grid X=1
+Range Grid X=30
 Range Grid Y=0.0005
-Enable=Enable
+Enable=DontRun
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -3002,12 +3002,12 @@ Plt=4
 AliasID=4
 XExp=T
 YExp=v(out1)
-XRng=15,10
+XRng=150
 YRng=0.95005,0.9498
 Options=LINEARX,LINEARY
-Range Grid X=1
+Range Grid X=30
 Range Grid Y=5e-5
-Enable=Enable
+Enable=DontRun
 Line Color=#FF00FF
 Text Color=#FF00FF
 Rainbow=False
@@ -3147,7 +3147,7 @@ Index=1
 Parameter Type=Component
 Name=V64
 Param=dc.value
-From=2.01
+From=2.4
 To=3
 Value=50m
 
