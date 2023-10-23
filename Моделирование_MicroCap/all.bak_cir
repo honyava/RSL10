@@ -8,7 +8,7 @@ Screen=1536,864
 MCAPVersion=12.2.0.5
 Key ID=Demo
 NLCnt=147
-TXCnt=19
+TXCnt=16
 
 [shapedef]
 Name=Battery
@@ -289,7 +289,7 @@ Pin="NC",a,7,5
 Name=Photodiode
 Definition=Macro
 Shape=Photodiode2
-Mask=5376
+Mask=4352
 Used=1
 memo=Photodiode macro using the IDark parameter
 Link=http://www.spectrum-soft.com/news/summer2004/photodiode.shtm
@@ -312,7 +312,7 @@ Pin="Plus",6,0,-5,-6
 Pin="Minus",0,0,-20,-6
 
 [Circuit]
-Window Placement=2,3, -1,-1, -8,-31, 208,208,1689,723
+Window Placement=2,3, -1,-1, -8,-31, 0,2,1315,517
 Default Object=Color=#000080
 Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -324,7 +324,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 0,0,953,745
+Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 0,0,953,517
 Window Placement in AC Analysis=2,3, -1,-1, -8,-31, 26,26,1145,453
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
@@ -1384,36 +1384,36 @@ Px=120,448
 Rot=7
 
 [Attr]
-ON=30,23,PART
+ON=1,33,PART
 V=X7
 Style=8192
 
 [Attr]
-ON=-73,-61,FILE
+ON=1,47,FILE
 V=Photodiode
 
 [Attr]
-ON=-21,-89,Param:RESPONSIVITY
+ON=1,61,Param:RESPONSIVITY
 V=.95
 
 [Attr]
-ON=-30,-103,Param:IDARK
+ON=1,75,Param:IDARK
 V=0.1N
 
 [Attr]
-ON=-17,-117,Param:CJO
+ON=1,89,Param:CJO
 V=10P
 
 [Attr]
-ON=-17,-131,Param:BV
+ON=1,103,Param:BV
 V=16
 
 [Attr]
-ON=-27,-145,Param:RSERIES
+ON=1,117,Param:RSERIES
 V=10M
 
 [Attr]
-ON=-29,-159,Param:N
+ON=1,131,Param:N
 V=1.35
 
 [Attr]
@@ -1474,7 +1474,7 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_Pulse
-V=DC 0 AC 1 0 Pulse 0 1n 0 0.01 0.01 0.1 1
+V=DC 0 AC 1 0 Pulse 0 10n 0 0.01 0.01 0.1 1
 Style=256
 
 [Attr]
@@ -1496,14 +1496,6 @@ Pxs=768,168,768,216
 
 [Wire]
 Pxs=768,216,768,248
-
-[Grid Text]
-Text="3V"
-Px=384,344
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
 
 [Grid Text]
 Text="out1"
@@ -1578,14 +1570,6 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text="3V"
-Px=832,480
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
 Text="ldo"
 Px=1152,144
 GridSnap=True
@@ -1635,14 +1619,6 @@ CBorder=None
 
 [Grid Text]
 Text="3V"
-Px=568,296
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="3V"
 Px=768,216
 GridSnap=True
 JustifyH=Left
@@ -1657,7 +1633,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=0.66666666666666663
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -1845,9 +1821,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=0,89
-Scale 3=1.3333333333333333
-Px=455,457
+SB 3=0,272
+Scale 3=0.66666666666666663
+Px=135,443
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1996,7 +1972,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=2,3, -1,-1, -8,-31, 0,0,953,745
+Window Placement=2,3, -1,-1, -8,-31, 0,0,953,517
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -2231,9 +2207,54 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=3
+w=0
+AliasID1=5
+w2=0
+AliasID2=5
+Pos=2.2645999999998616,7.0231519478967735e-006,2.7775999999998051,7.022930097206889e-006
+Posm=2.3370319001386965
+Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
+Format=3
+
+[AObject]
+Analysis=Transient
+Object=MeasureV
+Locked=True
+EndPoint=ArrowF
+CBorder=#000080
+w=1
 AliasID1=4
-w2=3
+w2=1
+AliasID2=4
+Pos=3.3169635081384223,1.8021307249827994,3.1099999999999999,1.8021296680397225
+Posm=3.3891213389121337
+Font=Height=-15,FStyle=0,Color=#FF00FF,Name=Arial
+Format=3
+
+[AObject]
+Analysis=Transient
+Object=MeasureV
+Locked=True
+EndPoint=ArrowF
+CBorder=#000080
+w=1
+AliasID1=4
+w2=1
+AliasID2=4
+Pos=0.56896878793137151,1.8021318624802407,0.96296878793137186,1.8021289076163487
+Posm=0.64853556485355646
+Font=Height=-15,FStyle=0,Color=#FF00FF,Name=Arial
+Format=3
+
+[AObject]
+Analysis=Transient
+Object=MeasureV
+Locked=True
+EndPoint=ArrowF
+CBorder=#000080
+w=1
+AliasID1=4
+w2=1
 AliasID2=4
 Pos=2.6465999999998195,1.8021303275024969,3.1195999999997674,1.8021302465365117
 Posm=2.7916666666666665
@@ -2246,9 +2267,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=3
+w=1
 AliasID1=4
-w2=3
+w2=1
 AliasID2=4
 Pos=11.765500004999025,1.8996508946890966,11.929500004998934,1.8994676692562305
 Posm=11.826697892271662
@@ -2261,9 +2282,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=3
+w=1
 AliasID1=4
-w2=3
+w2=1
 AliasID2=4
 Pos=11.759500004999028,1.899961511553246,11.906500004998946,1.8997747703454211
 Posm=11.820843091334893
@@ -2276,9 +2297,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=3
+w=1
 AliasID1=4
-w2=3
+w2=1
 AliasID2=4
 Pos=11.086500004999401,1.8999967520688903,11.256500004999307,1.8998076301442428
 Posm=11.153395784543324
@@ -2291,9 +2312,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=3
+w=1
 AliasID1=4
-w2=3
+w2=1
 AliasID2=4
 Pos=11.252500004999309,2.0009998766319882e-006,10.752500004999586,1.9990001233680116e-006
 Posm=11.281618887015176
@@ -2321,9 +2342,9 @@ Object=MeasureH
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=1
+w=0
 AliasID1=5
-w2=1
+w2=0
 AliasID2=5
 Pos=47.994599999978853,0.99989910267160775,48.500599999977673,0.99990213102655034
 Posm=0.99988416264804625
@@ -2336,9 +2357,9 @@ Object=MeasureH
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=1
+w=0
 AliasID1=5
-w2=1
+w2=0
 AliasID2=5
 Pos=1.2505999999999733,1.0000025007180222,2.2585999999998623,1.0000023558015743
 Posm=0.99998496894409961
@@ -2351,9 +2372,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=1
+w=0
 AliasID1=5
-w2=1
+w2=0
 AliasID2=5
 Pos=1.044599999999996,0.58808522820969511,0.93560000000000076,0.58623876960913834
 Posm=1.055586749017406
@@ -2366,9 +2387,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=3
+w=1
 AliasID1=4
-w2=3
+w2=1
 AliasID2=4
 Pos=0.20260000000000017,1.200569848155739,0.10260000000000008,1.2005698477952702
 Posm=0.21681723419041002
@@ -2798,7 +2819,7 @@ YRng=1.05,0.8
 Options=LINEARX,LINEARY
 Range Grid X=2
 Range Grid Y=0.05
-Enable=Enable
+Enable=DontRun
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -2850,7 +2871,7 @@ YRng=0.9025,0.9
 Options=LINEARX,LINEARY
 Range Grid X=2
 Range Grid Y=0.0005
-Enable=Enable
+Enable=DontRun
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
