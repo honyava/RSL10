@@ -1,1 +1,2 @@
-Record=TopLevelDocument|FileName=RSL10_Sch.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=Course.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Course.SchDoc|FileName=RSL10_Sch.SchDoc|SheetNumber=1
