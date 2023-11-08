@@ -1,0 +1,44 @@
+$AWR Design Environment
+$Version 16.01r build 12506 Rev1 (130759)
+$Export time : Thu Nov  2 12:40:08 2023
+$Export Format: Gerber
+$Export File Name: C:\Users\retin\Desktop\My_Git\RSL10\Altium\antenna\Antenna.gbr
+
+
+
+Statistics Of Layers
+
+Drawing Layer                    File Layer    Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
+------------------------------------------------------------------------------------------------------------------
++LAY_3_Perfect Conductor_COND    N/A             29        0     0         1     0        0     0    0         0
+Copper                           N/A              2        0     0         3     0        0     0    0         0
+Via                              N/A              7        0     0        48     0        0     0    0         0
+
+
+Summary Of Objects
+------------------
+         0 Rects     
+        52 Polygons  
+         0 Paths     
+         0 Texts     
+         0 Ellipses  
+         0 Instances 
+         0 Arrays    
+         0 Pins      
+         0 Drillholes
+
+
+Export Options
+--------------
+Draw path as polygon: 1
+Export pcell instances as cells: 0
+Export subcircuits as cells: 1
+Flatten cell hierarchy: 1
+Merge polygons on the +/- layers: 1
+Union polygons on the same layer: 0
+Write Cell using cached geometry: 0
+Write out pcell parameter maps: 0
+
+
+*** There were 0 warning and 0 error messages ***
+

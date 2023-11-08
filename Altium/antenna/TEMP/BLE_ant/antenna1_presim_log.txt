@@ -1,0 +1,4 @@
+1:38:01 ×ò, 11/02/2023 Log: Do check dataset with the current document
+1:38:01 ×ò, 11/02/2023 Log: Compare the document with the dataset 'EM_Opt2_DS13'
+1:38:01 ×ò, 11/02/2023 Log: Re-simulation, geometry has changed
+1:38:01 ×ò, 11/02/2023 Log: Schedule simulation job with AXIEM® - Async

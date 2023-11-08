@@ -1,0 +1,51 @@
+$AWR Design Environment
+$Version 16.01r build 12506 Rev1 (130759)
+$Export time : Thu Nov  2 12:33:26 2023
+$Export Format: GDSII
+$Export File Name: C:\Users\retin\Desktop\My_Git\RSL10\Altium\antenna\Antenna.gds
+
+
+
+Statistics Of Layers
+
+Drawing Layer                    File Layer    Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
+------------------------------------------------------------------------------------------------------------------
++LAY_3_Perfect Conductor_COND    157            157        0     0         1     0        0     0    0         0
+Copper                           1                2        0     0         0     0        0     0    0         0
+Via                              2                2        0     0        48     0        0     0    0         0
+
+
+Summary Of Objects
+------------------
+         0 Rects     
+        49 Polygons  
+         0 Paths     
+         0 Texts     
+         0 Ellipses  
+         0 Instances 
+         0 Arrays    
+         0 Pins      
+         0 Drillholes
+
+
+Export Options
+--------------
+Cell library name: Antenna
+Database unit per GDSII unit(nm): 1000
+Database unit size (nm):: 1
+Draw path as polygon: 0
+Export pcell instances as cells: 0
+Export subcircuits as cells: 1
+Flatten cell hierarchy: 0
+Limit cell names to 32 characters: 0
+Limit number of vertices per polygon to: 8191
+Merge polygons on the +/- layers: 1
+Skip faces and draw pins as polygons: 1
+Top cell name: Antenna
+Union polygons on the same layer: 0
+Write Cell using cached geometry: 0
+Write out pcell parameter maps: 0
+
+
+*** There were 0 warning and 0 error messages ***
+
