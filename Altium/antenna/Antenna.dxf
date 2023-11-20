@@ -13,15 +13,15 @@ $INSUNITS
   9
 $EXTMIN
   10
--42.3
+-42.5
   20
-6.9
+0
   9
 $EXTMAX
   10
--26.6
+0
   20
-20
+20.3
   0
 ENDSEC
   0
@@ -59,6 +59,16 @@ LAYER
   0
 LAYER
   2
+Default
+  70
+0
+  62
+1
+  6
+CONTINUOUS
+  0
+LAYER
+  2
 Via
   70
 0
@@ -74,16 +84,6 @@ Copper
 0
   62
 136
-  6
-CONTINUOUS
-  0
-LAYER
-  2
-+LAY_3_Perfect_Conductor_COND
-  70
-0
-  62
-137
   6
 CONTINUOUS
   0
@@ -95,955 +95,861 @@ SECTION
   2
 BLOCKS
   0
+BLOCK
+  2
+Antenna
+  3
+Antenna
+  10
+0
+  20
+0
+  70
+0
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+11.2
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+12.1
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-28.8
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+10.4
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-32.4
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-32.4
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+10.4
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-41
+  20
+13.9
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-30.6
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-34.2
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-32.4
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+12.2
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+12.1
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+10.3
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-35.1
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-36
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-30.6
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-30.6
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-27.9
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+13.1
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-34.2
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+10.3
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-36
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+10.4
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-34.2
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-29.7
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+11.3
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-31.5
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-33.3
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-41
+  20
+13
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-28.8
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-36.9
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+13.9
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+12.2
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+10.3
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-37.8
+  20
+12.2
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-28.8
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+12.1
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-36
+  20
+14
+  40
+0.2
+  0
+CIRCLE
+  8
+Via
+  10
+-40.1
+  20
+13
+  40
+0.2
+  0
+POLYLINE
+  8
+Copper
+  70
+1
+  66
+1
+  0
+VERTEX
+  8
+Copper
+  10
+-42.5
+  20
+14.7
+  0
+VERTEX
+  8
+Copper
+  10
+-42.5
+  20
+9.7
+  0
+VERTEX
+  8
+Copper
+  10
+-39.6
+  20
+9.7
+  0
+VERTEX
+  8
+Copper
+  10
+-39.6
+  20
+14.7
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Copper
+  70
+1
+  66
+1
+  0
+VERTEX
+  8
+Copper
+  10
+-38.7
+  20
+15.6
+  0
+VERTEX
+  8
+Copper
+  10
+-27.9
+  20
+15.6
+  0
+VERTEX
+  8
+Copper
+  10
+-27.9
+  20
+15.1
+  0
+VERTEX
+  8
+Copper
+  10
+-38.7
+  20
+15.1
+  0
+VERTEX
+  8
+Copper
+  10
+-38.4
+  20
+14.5
+  0
+VERTEX
+  8
+Copper
+  10
+-38.4
+  20
+9.7
+  0
+VERTEX
+  8
+Copper
+  10
+-39.5
+  20
+9.7
+  0
+VERTEX
+  8
+Copper
+  10
+-39.5
+  20
+14.5
+  0
+VERTEX
+  8
+Copper
+  10
+-39.2
+  20
+15.1
+  0
+VERTEX
+  8
+Copper
+  10
+-39.2
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-37.6
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-37.6
+  20
+16.5
+  0
+VERTEX
+  8
+Copper
+  10
+-37
+  20
+16.5
+  0
+VERTEX
+  8
+Copper
+  10
+-37
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-35.4
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-35.4
+  20
+16.5
+  0
+VERTEX
+  8
+Copper
+  10
+-34.8
+  20
+16.5
+  0
+VERTEX
+  8
+Copper
+  10
+-34.8
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-33.2
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-33.2
+  20
+16.5
+  0
+VERTEX
+  8
+Copper
+  10
+-32.6
+  20
+16.5
+  0
+VERTEX
+  8
+Copper
+  10
+-32.6
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-27.9
+  20
+20.3
+  0
+VERTEX
+  8
+Copper
+  10
+-27.9
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-32.1
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-32.1
+  20
+16
+  0
+VERTEX
+  8
+Copper
+  10
+-33.7
+  20
+16
+  0
+VERTEX
+  8
+Copper
+  10
+-33.7
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-34.3
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-34.3
+  20
+16
+  0
+VERTEX
+  8
+Copper
+  10
+-35.9
+  20
+16
+  0
+VERTEX
+  8
+Copper
+  10
+-35.9
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-36.5
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-36.5
+  20
+16
+  0
+VERTEX
+  8
+Copper
+  10
+-38.1
+  20
+16
+  0
+VERTEX
+  8
+Copper
+  10
+-38.1
+  20
+19.8
+  0
+VERTEX
+  8
+Copper
+  10
+-38.7
+  20
+19.8
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Copper
+  70
+1
+  66
+1
+  0
+VERTEX
+  8
+Copper
+  10
+-38.3
+  20
+14.7
+  0
+VERTEX
+  8
+Copper
+  10
+-38.3
+  20
+9.7
+  0
+VERTEX
+  8
+Copper
+  10
+-26.8
+  20
+9.7
+  0
+VERTEX
+  8
+Copper
+  10
+-26.8
+  20
+14.7
+  0
+SEQEND
+  0
+ENDBLK
+  0
 ENDSEC
   0
 SECTION
   2
 ENTITIES
   0
-CIRCLE
+INSERT
   8
-Via
+Default
+  2
+Antenna
   10
--37.5
+0
   20
-7.2
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-10.6
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-7.9
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--28.5
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--30.3
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--27.6
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--32.1
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--31.2
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--33.9
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-10.6
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--33.9
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-8.8
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-10.6
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--35.7
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-11.5
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--35.7
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-10.6
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--36.6
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--32.1
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-7.9
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--28.5
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-8.8
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--41.2
-  20
-11.5
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--41.2
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-10.6
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-9.7
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--29.4
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--34.8
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--35.7
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-9.7
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--28.5
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-10.6
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--32.1
-  20
-13.6
-  40
-0.18
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-8.8
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--33
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--30.3
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-7.2
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-8.8
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--32.1
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--33.9
-  20
-12.4
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--37.5
-  20
-8.8
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-11.5
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--40.3
-  20
-8.8
-  40
-0.2
-  0
-CIRCLE
-  8
-Via
-  10
--30.3
-  20
-12.4
-  40
-0.2
-  0
-POLYLINE
-  8
-Copper
-  70
+0
+  50
+0
+  41
 1
-  66
+  42
 1
-  0
-VERTEX
-  8
-Copper
-  10
--38.1
-  20
-12.9
-  0
-VERTEX
-  8
-Copper
-  10
--38.1
-  20
-6.9
-  0
-VERTEX
-  8
-Copper
-  10
--26.6
-  20
-6.9
-  0
-VERTEX
-  8
-Copper
-  10
--26.6
-  20
-12.9
-  0
-SEQEND
-  0
-POLYLINE
-  8
-Copper
-  70
-1
-  66
-1
-  0
-VERTEX
-  8
-Copper
-  10
--42.3
-  20
-12.9
-  0
-VERTEX
-  8
-Copper
-  10
--42.3
-  20
-6.9
-  0
-VERTEX
-  8
-Copper
-  10
--39.8
-  20
-6.9
-  0
-VERTEX
-  8
-Copper
-  10
--39.8
-  20
-12.9
-  0
-SEQEND
-  0
-POLYLINE
-  8
-Copper
-  70
-1
-  66
-1
-  0
-VERTEX
-  8
-Copper
-  10
--37.6
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--37.6
-  20
-16.2
-  0
-VERTEX
-  8
-Copper
-  10
--37
-  20
-16.2
-  0
-VERTEX
-  8
-Copper
-  10
--37
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--35.4
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--35.4
-  20
-16.2
-  0
-VERTEX
-  8
-Copper
-  10
--34.8
-  20
-16.2
-  0
-VERTEX
-  8
-Copper
-  10
--34.8
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--33.2
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--33.2
-  20
-16.2
-  0
-VERTEX
-  8
-Copper
-  10
--32.6
-  20
-16.2
-  0
-VERTEX
-  8
-Copper
-  10
--32.6
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--28.6
-  20
-20
-  0
-VERTEX
-  8
-Copper
-  10
--28.6
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--32.1
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--32.1
-  20
-15.7
-  0
-VERTEX
-  8
-Copper
-  10
--33.7
-  20
-15.7
-  0
-VERTEX
-  8
-Copper
-  10
--33.7
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--34.3
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--34.3
-  20
-15.7
-  0
-VERTEX
-  8
-Copper
-  10
--35.9
-  20
-15.7
-  0
-VERTEX
-  8
-Copper
-  10
--35.9
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--36.5
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--36.5
-  20
-15.7
-  0
-VERTEX
-  8
-Copper
-  10
--38.1
-  20
-15.7
-  0
-VERTEX
-  8
-Copper
-  10
--38.1
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--38.7
-  20
-19.5
-  0
-VERTEX
-  8
-Copper
-  10
--38.7
-  20
-13.9
-  0
-VERTEX
-  8
-Copper
-  10
--31.8
-  20
-13.9
-  0
-VERTEX
-  8
-Copper
-  10
--31.8
-  20
-13.4
-  0
-VERTEX
-  8
-Copper
-  10
--38.7
-  20
-13.4
-  0
-VERTEX
-  8
-Copper
-  10
--38.7
-  20
-12.9
-  0
-VERTEX
-  8
-Copper
-  10
--38.4
-  20
-11.863761
-  0
-VERTEX
-  8
-Copper
-  10
--38.4
-  20
-6.9
-  0
-VERTEX
-  8
-Copper
-  10
--39.530871
-  20
-6.9
-  0
-VERTEX
-  8
-Copper
-  10
--39.530871
-  20
-11.863761
-  0
-VERTEX
-  8
-Copper
-  10
--39.2
-  20
-12.9
-  0
-VERTEX
-  8
-Copper
-  10
--39.2
-  20
-20
-  0
-SEQEND
-  0
-POLYLINE
-  8
-+LAY_3_Perfect_Conductor_COND
-  70
-1
-  66
-1
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--38.1
-  20
-14.4
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--26.6
-  20
-14.4
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--26.6
-  20
-12.9
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--26.6
-  20
-6.9
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--42.3
-  20
-6.9
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--42.3
-  20
-12.9
-  0
-VERTEX
-  8
-+LAY_3_Perfect_Conductor_COND
-  10
--38.1
-  20
-12.9
-  0
-SEQEND
   0
 ENDSEC
   0

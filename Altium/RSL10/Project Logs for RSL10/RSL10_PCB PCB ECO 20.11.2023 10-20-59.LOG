@@ -1,0 +1,39 @@
+Change Component Footprint: Designator=C3 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C5 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C7 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C8 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C9 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C10 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C11 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C12 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C13 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C14 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C15 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C16 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C17 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C18 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C19 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C20 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C21 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C22 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C23 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C24 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C25 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C26 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=C27 Old Footprint=cap0603 New Footprint=cap0402
+Change Component Footprint: Designator=L4 Old Footprint=MLZ1608M100WT000 New Footprint=IND0402
+Added Pin To Net: NetName=BUSY Pin=DA3-1
+Added Pin To Net: NetName=SCL Pin=DA3-2
+Added Pin To Net: NetName=SDA Pin=DA3-3
+Added Pin To Net: NetName=GND Pin=DA3-4
+Added Pin To Net: NetName=1V8 Pin=DA3-5
+Added Pin To Net: NetName=1V8 Pin=DA3-6
+Added Pin To Net: NetName=NetC26_1 Pin=DA3-8
+Added Pin To Net: NetName=A\L\E\R\T\ Pin=DA3-9
+Added Pin To Net: NetName=NetDA3_7 Pin=DA3-7
+Added Pin To Net: NetName=NetDA3_7 Pin=R21-1
+Added Net: Name=NetDA3_7
+Added Pin To Net: NetName=NetDA3_10 Pin=DA3-10
+Added Pin To Net: NetName=NetDA3_10 Pin=R20-2
+Added Pin To Net: NetName=NetDA3_10 Pin=R22-1
+Added Net: Name=NetDA3_10

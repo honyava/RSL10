@@ -1,0 +1,3 @@
+Added Component: Designator=A1(antenna)
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Member To Class: ClassName=Course Member=Component A1 Обозначение при заказе

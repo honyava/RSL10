@@ -1,6 +1,6 @@
 $AWR Design Environment
 $Version 16.01r build 12506 Rev1 (130759)
-$Export time : Thu Nov  2 12:40:08 2023
+$Export time : Sat Nov 18 16:40:19 2023
 $Export Format: Gerber
 $Export File Name: C:\Users\retin\Desktop\My_Git\RSL10\Altium\antenna\Antenna.gbr
 
@@ -8,17 +8,17 @@ $Export File Name: C:\Users\retin\Desktop\My_Git\RSL10\Altium\antenna\Antenna.gb
 
 Statistics Of Layers
 
-Drawing Layer                    File Layer    Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
-------------------------------------------------------------------------------------------------------------------
-+LAY_3_Perfect Conductor_COND    N/A             29        0     0         1     0        0     0    0         0
-Copper                           N/A              2        0     0         3     0        0     0    0         0
-Via                              N/A              7        0     0        48     0        0     0    0         0
+Drawing Layer         File Layer    Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
+-------------------------------------------------------------------------------------------------------
++LAY_3_Trace1_COND    N/A             27        0     0         1     0        0     0    0         0
+Copper                N/A              2        0     0         3     0        0     0    0         0
+Via                   N/A              7        0     0        43     0        0     0    0         0
 
 
 Summary Of Objects
 ------------------
          0 Rects     
-        52 Polygons  
+        47 Polygons  
          0 Paths     
          0 Texts     
          0 Ellipses  

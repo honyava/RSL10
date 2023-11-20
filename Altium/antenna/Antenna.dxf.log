@@ -1,31 +1,35 @@
 $AWR Design Environment
 $Version 16.01r build 12506 Rev1 (130759)
-$Export time : Thu Nov  2 12:37:50 2023
+$Export time : Sat Nov 18 16:43:25 2023
 $Export Format: DXF
 $Export File Name: C:\Users\retin\Desktop\My_Git\RSL10\Altium\antenna\Antenna.dxf
 
-Error: Layer name "+LAY_3_Perfect Conductor_COND" contains invalid characters
-Error: Layer name "+LAY_3_Perfect Conductor_COND" contains invalid characters
-Error: Layer name "+LAY_3_Perfect Conductor_COND" contains invalid characters
+    1. translating cell "Antenna"
+
+
+Individual Cell Statistics
+
+Cell       Rects Polygons  Paths Ellipses Texts Instances Arrays Pins Drillholes
+--------------------------------------------------------------------------------
+Antenna       0         3     0       43     0         1      0    0         0
 
 
 Statistics Of Layers
 
-Drawing Layer                    File Layer                       Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
--------------------------------------------------------------------------------------------------------------------------------------
-+LAY_3_Perfect Conductor_COND    +LAY_3_Perfect Conductor_COND      29        0     0         1     0        0     0    0         0
-Copper                           Copper                              2        0     0         3     0        0     0    0         0
-Via                              Via                                 7        0     0         0     0       48     0    0         0
+Drawing Layer    File Layer    Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
+--------------------------------------------------------------------------------------------------
+Copper           Copper           2        0     0         3     0        0     0    0         0
+Via              Via              7        0     0         0     0       43     0    0         0
 
 
 Summary Of Objects
 ------------------
          0 Rects     
-         4 Polygons  
+         3 Polygons  
          0 Paths     
          0 Texts     
-        48 Ellipses  
-         0 Instances 
+        43 Ellipses  
+         1 Instances 
          0 Arrays    
          0 Pins      
          0 Drillholes
@@ -39,7 +43,7 @@ Database unit size (nm):: 1
 Draw path as polygon: 1
 Export pcell instances as cells: 0
 Export subcircuits as cells: 1
-Flatten cell hierarchy: 1
+Flatten cell hierarchy: 0
 Merge polygons on the +/- layers: 1
 Replace illegal characters in layer names: 0
 Skip faces and draw pins as polygons: 1
@@ -48,5 +52,5 @@ Write Cell using cached geometry: 0
 Write out pcell parameter maps: 0
 
 
-*** There were 3 warning and 0 error messages ***
+*** There were 0 warning and 0 error messages ***
 

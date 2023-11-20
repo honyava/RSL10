@@ -1,0 +1,15 @@
+Added Pin To Net: NetName=BUSY Pin=DA3-1
+Added Pin To Net: NetName=SCL Pin=DA3-2
+Added Pin To Net: NetName=SDA Pin=DA3-3
+Added Pin To Net: NetName=GND Pin=DA3-4
+Added Pin To Net: NetName=1V8 Pin=DA3-5
+Added Pin To Net: NetName=1V8 Pin=DA3-6
+Added Pin To Net: NetName=NetC26_1 Pin=DA3-8
+Added Pin To Net: NetName=A\L\E\R\T\ Pin=DA3-9
+Added Pin To Net: NetName=NetDA3_7 Pin=DA3-7
+Added Pin To Net: NetName=NetDA3_7 Pin=R21-1
+Added Net: Name=NetDA3_7
+Added Pin To Net: NetName=NetDA3_10 Pin=DA3-10
+Added Pin To Net: NetName=NetDA3_10 Pin=R20-2
+Added Pin To Net: NetName=NetDA3_10 Pin=R22-1
+Added Net: Name=NetDA3_10

@@ -1,0 +1,165 @@
+Added Component: Designator=C1(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "GRM1535C1H100J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10п"; VariantName = "[No Variations]"
+Added Component: Designator=C2(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "GRM1555C1H1R0BA01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1п"; VariantName = "[No Variations]"
+Added Component: Designator=C4(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "GRM21BR60J335K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4,7мк"; VariantName = "[No Variations]"
+Added Component: Designator=C5(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "CL10C1R5CB8NNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1,5п"; VariantName = "[No Variations]"
+Added Component: Designator=C6(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "CC0603KRX7R7BB105"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = "-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1мк"; VariantName = "[No Variations]"
+Added Component: Designator=C8(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "CC0603KRX7R7BB105"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = "-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1мк"; VariantName = "[No Variations]"
+Added Component: Designator=C9(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "CC0603KRX7R7BB105"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = "-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1мк"; VariantName = "[No Variations]"
+Added Component: Designator=C10(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "GRM188R61A225K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2,2мк"; VariantName = "[No Variations]"
+Added Component: Designator=L1(IND0402)
+Add component (AddParameter): Name = "Name"; Value = "Катушка индуктивности"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "MLZ1608M100WT000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Гн"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0,4н"; VariantName = "[No Variations]"
+Added Component: Designator=L2(IND0402)
+Add component (AddParameter): Name = "Name"; Value = "Катушка индуктивности"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "MLZ1608M100WT000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Гн"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1,8н"; VariantName = "[No Variations]"
+Added Component: Designator=L3(IND0402)
+Add component (AddParameter): Name = "Name"; Value = "Катушка индуктивности"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "MLZ1608M100WT000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Гн"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3н"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Res0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "АЛЯР.434110.005ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10к"; VariantName = "[No Variations]"
+Added Component: Designator=R2(Res0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "АЛЯР.434110.005ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10к"; VariantName = "[No Variations]"
+Added Component: Designator=R3(Res0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "АЛЯР.434110.005ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "AC0603FR-0768RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "68"; VariantName = "[No Variations]"
+Added Component: Designator=R4(Res0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "АЛЯР.434110.005ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "AC0603FR-0768RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "68"; VariantName = "[No Variations]"
+Added Component: Designator=R5(Res0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "АЛЯР.434110.005ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "AC0603FR-0768RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "68"; VariantName = "[No Variations]"
+Added Component: Designator=R6(Res0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "АЛЯР.434110.005ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10к"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=NetA1_1 Pin=C1-2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetA1_1 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=1V8 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=1V8 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=GND Pin=L1-1
+Added Pin To Net: NetName=NetA1_1 Pin=L1-2
+Added Pin To Net: NetName=NetC2_1 Pin=L2-1
+Added Pin To Net: NetName=NetC3_2 Pin=L2-2
+Added Pin To Net: NetName=NetC3_2 Pin=L3-1
+Added Pin To Net: NetName=NetC5_2 Pin=L3-2
+Added Pin To Net: NetName=1V8 Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=1V8 Pin=R2-1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetDA1_16 Pin=R3-1
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetDA1_33 Pin=R4-1
+Added Pin To Net: NetName=NetR2_2 Pin=R4-2
+Added Pin To Net: NetName=NetDA1_34 Pin=R5-1
+Added Pin To Net: NetName=NetR1_2 Pin=R5-2
+Added Pin To Net: NetName=1V8 Pin=R6-1
+Added Pin To Net: NetName=NetR3_2 Pin=R6-2
+Added Member To Class: ClassName=AntDig Member=Component C1 10п
+Added Member To Class: ClassName=AntDig Member=Component C2 1п
+Added Member To Class: ClassName=AntDig Member=Component C4 4,7мк
+Added Member To Class: ClassName=AntDig Member=Component C5 1,5п
+Added Member To Class: ClassName=AntDig Member=Component C6 1мк
+Added Member To Class: ClassName=AntDig Member=Component C8 1мк
+Added Member To Class: ClassName=AntDig Member=Component C9 1мк
+Added Member To Class: ClassName=AntDig Member=Component C10 2,2мк
+Added Member To Class: ClassName=AntDig Member=Component L1 0,4н
+Added Member To Class: ClassName=AntDig Member=Component L2 1,8н
+Added Member To Class: ClassName=AntDig Member=Component L3 3н
+Added Member To Class: ClassName=AntDig Member=Component R1 10к
+Added Member To Class: ClassName=AntDig Member=Component R2 10к
+Added Member To Class: ClassName=AntDig Member=Component R3 68
+Added Member To Class: ClassName=AntDig Member=Component R4 68
+Added Member To Class: ClassName=AntDig Member=Component R5 68
+Added Member To Class: ClassName=AntDig Member=Component R6 10к
+Added Room: Name=AntDig

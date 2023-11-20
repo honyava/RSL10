@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=BUSY Pin=DA1-25
+Removed Pin From Net: NetName=A\L\E\R\T\ Pin=DA1-27
+Removed Pin From Net: NetName=BUSY Pin=X2-1
+Removed Pin From Net: NetName=A\L\E\R\T\ Pin=X2-2
+Removed Pin From Net: NetName=SDA Pin=X2-3
+Removed Pin From Net: NetName=SCL Pin=X2-4
+Added Pin To Net: NetName=A\L\E\R\T\ Pin=DA1-25
+Added Pin To Net: NetName=BUSY Pin=DA1-27
+Added Pin To Net: NetName=SCL Pin=X2-1
+Added Pin To Net: NetName=SDA Pin=X2-2
+Added Pin To Net: NetName=BUSY Pin=X2-3
+Added Pin To Net: NetName=A\L\E\R\T\ Pin=X2-4

@@ -1,0 +1,170 @@
+Change Component Comment : Designator=C6 Old Comment=1,5п New Comment=1мк
+Change Component Comment : Designator=C4 Old Comment=1,5п New Comment=4,7мк
+Change Component Comment : Designator=C10 Old Comment=1мк New Comment=2,2мк
+Change Component Comment : Designator=C5 Old Comment=4,7мк New Comment=1,5п
+Change Component Comment : Designator=C9 Old Comment=100п New Comment=1мк
+Change Component Kind : Designator=A1 Old Kind=Standard (No BOM) New Kind=Standard
+Change component parameters: Designator = "C6" ("C6"); Footprint = "CAP0402"; UniqueID = "\STCZDRUD" ("\STCZDRUD")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "CC0603KRX7R7BB105"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nameSuf"; Value = "-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1мк"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "cap0402"; UniqueID = "\CSTOPQTY" ("\CSTOPQTY")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "CC0603KRX7R7BB105"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nameSuf"; Value = "-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1мк"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "CAP0402"; UniqueID = "\ISDJBSHF" ("\ISDJBSHF")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "GRM21BR60J335K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4,7мк"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "cap0402"; UniqueID = "\ODMBWDVL" ("\ODMBWDVL")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "CL10C1R5CB8NNNC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1,5п"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "cap0402"; UniqueID = "\BAPSXOPC" ("\BAPSXOPC")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "GRM188R61A225K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2,2мк"; VariantName = "[No Variations]"
+Added Component: Designator=C3(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "CL10C1R5CB8NNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1,5п"; VariantName = "[No Variations]"
+Added Component: Designator=C7(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "GRM1885C1H101J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100п"; VariantName = "[No Variations]"
+Added Component: Designator=C11(cap0402)
+Add component (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "GRM21BR60J335K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4,7мк"; VariantName = "[No Variations]"
+Added Component: Designator=DA1(RSL10)
+Added Component: Designator=G1(XTAL48)
+Added Pin To Net: NetName=1V8 Pin=C4-2
+Added Pin To Net: NetName=1V8 Pin=C7-2
+Added Pin To Net: NetName=1V8 Pin=C8-2
+Added Pin To Net: NetName=1V8 Pin=DA1-9
+Added Pin To Net: NetName=1V8 Pin=DA1-36
+Added Pin To Net: NetName=1V8 Pin=R1-1
+Added Pin To Net: NetName=1V8 Pin=R2-1
+Added Pin To Net: NetName=1V8 Pin=R6-1
+Added Pin To Net: NetName=1V8 Pin=X2-6
+Added Net: Name=1V8
+Added Pin To Net: NetName=A\L\E\R\T\ Pin=DA1-29
+Added Pin To Net: NetName=A\L\E\R\T\ Pin=X2-3
+Added Net: Name=A\L\E\R\T\
+Added Pin To Net: NetName=BUSY Pin=DA1-30
+Added Pin To Net: NetName=BUSY Pin=X2-4
+Added Net: Name=BUSY
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=DA1-3
+Added Pin To Net: NetName=GND Pin=DA1-8
+Added Pin To Net: NetName=GND Pin=DA1-28
+Added Pin To Net: NetName=GND Pin=DA1-35
+Added Pin To Net: NetName=GND Pin=DA1-42
+Added Pin To Net: NetName=GND Pin=DA1-46
+Added Pin To Net: NetName=GND Pin=G1-2
+Added Pin To Net: NetName=GND Pin=G1-4
+Added Pin To Net: NetName=GND Pin=L1-1
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Pin To Net: NetName=GND Pin=X2-7
+Added Net: Name=GND
+Added Pin To Net: NetName=LED Pin=DA1-24
+Added Pin To Net: NetName=LED Pin=X2-5
+Added Net: Name=LED
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=C1-2
+Added Pin To Net: NetName=NetA1_1 Pin=C2-2
+Added Pin To Net: NetName=NetA1_1 Pin=L1-2
+Added Net: Name=NetA1_1
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=L2-1
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=L2-2
+Added Pin To Net: NetName=NetC3_2 Pin=L3-1
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=DA1-1
+Added Pin To Net: NetName=NetC5_2 Pin=L3-2
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=DA1-7
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=DA1-6
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=DA1-5
+Added Net: Name=NetC9_2
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=NetC10_2 Pin=DA1-48
+Added Net: Name=NetC10_2
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=NetC11_2 Pin=DA1-12
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetDA1_16 Pin=DA1-16
+Added Pin To Net: NetName=NetDA1_16 Pin=R3-1
+Added Net: Name=NetDA1_16
+Added Pin To Net: NetName=NetDA1_33 Pin=DA1-33
+Added Pin To Net: NetName=NetDA1_33 Pin=R4-1
+Added Net: Name=NetDA1_33
+Added Pin To Net: NetName=NetDA1_34 Pin=DA1-34
+Added Pin To Net: NetName=NetDA1_34 Pin=R5-1
+Added Net: Name=NetDA1_34
+Added Pin To Net: NetName=NetDA1_43 Pin=DA1-43
+Added Pin To Net: NetName=NetDA1_43 Pin=G1-3
+Added Net: Name=NetDA1_43
+Added Pin To Net: NetName=NetDA1_44 Pin=DA1-44
+Added Pin To Net: NetName=NetDA1_44 Pin=G1-1
+Added Net: Name=NetDA1_44
+Added Pin To Net: NetName=NetDA1_45 Pin=DA1-45
+Added Pin To Net: NetName=NetDA1_45 Pin=DA1-47
+Added Net: Name=NetDA1_45
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=R5-2
+Added Pin To Net: NetName=NetR1_2 Pin=X1-3
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=R4-2
+Added Pin To Net: NetName=NetR2_2 Pin=X1-2
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=R6-2
+Added Pin To Net: NetName=NetR3_2 Pin=X1-1
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=SCL Pin=DA1-25
+Added Pin To Net: NetName=SCL Pin=X2-1
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=DA1-27
+Added Pin To Net: NetName=SDA Pin=X2-2
+Added Net: Name=SDA
+Added Class: Name=AntDig
+Added Room: Name=AntDig
