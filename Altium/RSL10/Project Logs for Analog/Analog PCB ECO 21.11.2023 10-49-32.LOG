@@ -1,0 +1,16 @@
+Change Component Footprint: Designator=C6 Old Footprint=CAP0805 New Footprint=cap0603
+Change Component Footprint: Designator=C7 Old Footprint=CAP0805 New Footprint=cap0603
+Change component parameters: Designator = "C6" ("C6"); Footprint = "CAP0805"; UniqueID = "\EBPZZOGB" ("\EBPZZOGB")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "GRM188R61E106M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10мк"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "CAP0805"; UniqueID = "\JMOWHVRB" ("\JMOWHVRB")
+Change component parameters (AddParameter): Name = "manufacture"; Value = "ОЖО.460.107ТУ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "Керамический конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "GRM188R61E106M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "Ф"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10мк"; VariantName = "[No Variations]"

@@ -1,3 +1,0 @@
-[8960]  Error log for : Antenna.DS1.dsf
-	[8960]	Read lock timed out : Lock being acquired for 'header load' {GetISimDataSetsForProject}
-	[8960]	Unable to acquire file lock for the data set

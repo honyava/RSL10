@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetC4_2 Pin=T1-T
+Removed Pin From Net: NetName=NetC11_1 Pin=T2-T
+Removed Pin From Net: NetName=NetC16_1 Pin=T3-T
+Removed Member From Class: ClassName=Analog Member=T1
+Removed Member From Class: ClassName=Analog Member=T2
+Removed Member From Class: ClassName=Analog Member=T3

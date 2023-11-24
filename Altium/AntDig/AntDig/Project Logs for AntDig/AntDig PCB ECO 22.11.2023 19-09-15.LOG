@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=1V8 Pin=R1-1
+Removed Pin From Net: NetName=1V8 Pin=R2-1
+Removed Member From Class: ClassName=AntDig Member=R1
+Removed Member From Class: ClassName=AntDig Member=R2
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Pin To Net: NetName=NetR4_2 Pin=X1-2
+Added Net: Name=NetR4_2
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetR5_2 Pin=X1-3
+Added Net: Name=NetR5_2
