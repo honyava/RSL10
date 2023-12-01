@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-OutputPath=
+OutputPath=Project Outputs for AntDig
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -108,6 +108,240 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XJVQAIGG
 
+[Document5]
+DocumentPath=Project Outputs for AntDig\AntDig_ПЭ3.xls
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document6]
+DocumentPath=SB.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Документация\.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Документация\AntDig.PcbDoc.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Документация\AntDigСБ.PcbDoc.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Документация\Ведомость покупных изделий.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Документация\Перечень элементов.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Документация\Спецификация.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Документация\Схема.pdf
+DItemRevisionGUID=
+
+[Parameter1]
+Name=DecimalNumber
+Value=
+
+[Parameter2]
+Name=Графа 04 - Литера
+Value=
+
+[Parameter3]
+Name=Графа 12 - Подпись
+Value=
+
+[Parameter4]
+Name=Графа 14 - Порядковый номер изменения
+Value=
+
+[Parameter5]
+Name=Графа 15 - Указания об изменении листа
+Value=
+
+[Parameter6]
+Name=Графа 16 - Номер извещения
+Value=
+
+[Parameter7]
+Name=Графа 19 - Инвентарный номер подлинника
+Value=
+
+[Parameter8]
+Name=Графа 20 - Подпись и дата приемки в СТД
+Value=
+
+[Parameter9]
+Name=Графа 21 - Взам. инв №
+Value=
+
+[Parameter10]
+Name=Графа 22 - Инвентарный номер дубликата
+Value=
+
+[Parameter11]
+Name=Графа 23 - Подпись и дата приемки дубликата в СТД
+Value=
+
+[Parameter12]
+Name=Графа 24 - Справ. №
+Value=
+
+[Parameter13]
+Name=Графа 28 - Номер и год утверждения литеры
+Value=
+
+[Parameter14]
+Name=Графа 29 - Номер и год утверждения документации
+Value=
+
+[Parameter15]
+Name=Графа 30 - Индекс заказчика
+Value=
+
+[Parameter16]
+Name=Децимальный номер печатного узла
+Value=
+
+[Parameter17]
+Name=Извещение_дата
+Value=
+
+[Parameter18]
+Name=Код типа схемы
+Value=
+
+[Parameter19]
+Name=Компания
+Value=
+
+[Parameter20]
+Name=Компания1
+Value=
+
+[Parameter21]
+Name=Компания2
+Value=
+
+[Parameter22]
+Name=Литера1
+Value=
+
+[Parameter23]
+Name=Наименование
+Value=
+
+[Parameter24]
+Name=Наименование1
+Value=
+
+[Parameter25]
+Name=Наименование2
+Value=
+
+[Parameter26]
+Name=Начальник отдела
+Value=
+
+[Parameter27]
+Name=Начальник отдела ( альтернативное название параметра)
+Value=
+
+[Parameter28]
+Name=Начальник отдела_дата
+Value=
+
+[Parameter29]
+Name=Нормоконтроль
+Value=
+
+[Parameter30]
+Name=Нормоконтроль_дата
+Value=
+
+[Parameter31]
+Name=Обозначение
+Value=
+
+[Parameter32]
+Name=Папка для сохранения графической документации
+Value=Документация
+
+[Parameter33]
+Name=Папка для сохранения текстовой документации
+Value=Документация
+
+[Parameter34]
+Name=Первичная применяемость спецификации
+Value=
+
+[Parameter35]
+Name=Проверил
+Value=
+
+[Parameter36]
+Name=Проверил_дата
+Value=
+
+[Parameter37]
+Name=Разработал
+Value=
+
+[Parameter38]
+Name=Разработал_дата
+Value=
+
+[Parameter39]
+Name=Технолог
+Value=
+
+[Parameter40]
+Name=Технолог_дата
+Value=
+
+[Parameter41]
+Name=Тип документа
+Value=
+
+[Parameter42]
+Name=Утвердил
+Value=
+
+[Parameter43]
+Name=Утвердил_дата
+Value=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -117,6 +351,45 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Generic_EDE]
+OutputDir=Project Outputs for AntDig
+
+[Generic_SmartPDF]
+AutoOpenFile=-1
+AutoOpenOutJob=-1
+
+[Generic_SmartPDFSettings]
+ProjectMode=0
+ZoomPrecision=50
+AddNetsInformation=-1
+AddNetPins=-1
+AddNetNetLabels=-1
+AddNetPorts=-1
+ShowComponentParameters=-1
+GlobalBookmarks=0
+ExportBOM=0
+TemplateFilename=
+TemplateStoreRelative=-1
+PCB_PrintColor=1
+SCH_PrintColor=2
+PrintQuality=-4
+SCH_ShowNoErc=-1
+SCH_ShowParameter=-1
+SCH_ShowProbes=-1
+SCH_ShowBlankets=-1
+SCH_NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle
+SCH_ShowNote=-1
+SCH_ShowNoteCollapsed=-1
+SCH_ExpandLogicalToPhysical=-1
+SCH_VariantName=[No Variations]
+SCH_ExpandComponentDesignators=-1
+SCH_ExpandNetlabels=0
+SCH_ExpandPorts=0
+SCH_ExpandSheetNumber=0
+SCH_ExpandDocumentNumber=0
+SCH_HasExpandLogicalToPhysicalSheets=-1
+SaveSettingsToOutJob=0
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -449,6 +722,11 @@ OutputName9=Report Single Pin Nets
 OutputDocumentPath9=
 OutputVariantName9=[No Variations]
 OutputDefault9=0
+OutputType10=BoardAssistant
+OutputName10=BoardAssistant text documents
+OutputDocumentPath10=
+OutputVariantName10=[No Variations]
+OutputDefault10=0
 
 [OutputGroup7]
 Name=Other Outputs
