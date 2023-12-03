@@ -27,17 +27,23 @@ Project File Date:  09/25/2023
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
+compiling rsl10_calibrate_power.c...
 compiling stubprf.c...
+compiling rsl10_sys_audio.c...
 compiling rsl10_romvect.c...
+compiling rsl10_calibrate.c...
 compiling rsl10_sys_asrc.c...
 compiling rsl10_sys_adc.c...
-compiling rsl10_sys_audio.c...
 compiling rsl10_calibrate_clock.c...
-compiling rsl10_calibrate.c...
-compiling rsl10_calibrate_power.c...
 compiling rsl10_sys_clocks.c...
 compiling rsl10_sys_crc.c...
 compiling rsl10_sys_dma.c...
+compiling rsl10_sys_flash.c...
+compiling rsl10_sys_power.c...
+compiling app_bass.c...
+compiling rsl10_sys_rffe.c...
+compiling rsl10_sys_timers.c...
+compiling rsl10_sys_power_modes.c...
 compiling my_func.c...
 interrupt.c(41): warning: implicit declaration of function 'APP_WhitelistSetInactive' is invalid in C99 [-Wimplicit-function-declaration]
             APP_WhitelistSetInactive();
@@ -59,50 +65,44 @@ interrupt.c(198): warning: implicit declaration of function 'APP_SetConnectionCf
             ^
 6 warnings generated.
 compiling interrupt.c...
-compiling rsl10_sys_power.c...
-compiling rsl10_sys_timers.c...
-compiling rsl10_sys_flash.c...
-compiling rsl10_sys_power_modes.c...
-compiling rsl10_sys_rffe.c...
-compiling rsl10_sys_uart.c...
-main.c(51): error: use of undeclared identifier 'app_adv_info'
+main.c(33): error: use of undeclared identifier 'app_adv_info'
             &app_adv_info,
              ^
-main.c(52): error: use of undeclared identifier 'APP_HRPS_HeartRateMeasurementUpdate'
+main.c(34): error: use of undeclared identifier 'APP_HRPS_HeartRateMeasurementUpdate'
             APP_HRPS_HeartRateMeasurementUpdate,
             ^
-main.c(53): error: use of undeclared identifier 'APP_HRPS_EnergyExpResetInd'
+main.c(35): error: use of undeclared identifier 'APP_HRPS_EnergyExpResetInd'
             APP_HRPS_EnergyExpResetInd);
             ^
-main.c(54): warning: implicit declaration of function 'APP_HRPS_Initialize' is invalid in C99 [-Wimplicit-function-declaration]
+main.c(36): warning: implicit declaration of function 'APP_HRPS_Initialize' is invalid in C99 [-Wimplicit-function-declaration]
     APP_HRPS_Initialize();
     ^
-main.c(85): warning: implicit declaration of function 'APP_SetAdvScanData' is invalid in C99 [-Wimplicit-function-declaration]
+main.c(58): warning: implicit declaration of function 'APP_SetAdvScanData' is invalid in C99 [-Wimplicit-function-declaration]
     APP_SetAdvScanData();
     ^
 2 warnings and 3 errors generated.
 compiling main.c...
-compiling app_bass.c...
+compiling rsl10_sys_uart.c...
 compiling rsl10_sys_version.c...
 compiling ble_l2c.c...
-assembling startup_rsl10.s...
 compiling rsl10_protocol.c...
+assembling startup_rsl10.s...
 compiling freertos_evr.c...
-compiling croutine.c...
-compiling ble_diss.c...
+compiling ble_gatt.c...
 compiling event_groups.c...
-compiling system_rsl10.c...
+compiling ble_diss.c...
+compiling croutine.c...
 compiling ble_bass.c...
 compiling list.c...
-compiling ble_gatt.c...
+compiling system_rsl10.c...
 compiling port.c...
-compiling heap_4.c...
 compiling msg_handler.c...
 compiling ble_hrps.c...
-compiling stream_buffer.c...
 compiling ble_gap.c...
-compiling queue.c...
+compiling heap_4.c...
+compiling stream_buffer.c...
 compiling timers.c...
+compiling queue.c...
 compiling tasks.c...
 ".\Objects\test.axf" - 3 Error(s), 8 Warning(s).
 
@@ -166,19 +166,19 @@ Package Vendor: ONSemiconductor
       Include file:  Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.6
+      Source file:   Source\portable\GCC\ARM_CM3\port.c
       Source file:   Source\tasks.c
-      Include file:  Source\include\semphr.h
+      Include file:  Source\include\FreeRTOS.h
       Include file:  Source\include\task.h
       Source file:   Source\list.c
-      Include file:  Source\include\FreeRTOS.h
-      Source file:   Source\portable\GCC\ARM_CM3\port.c
+      Include file:  Source\include\semphr.h
       Source file:   Source\queue.c
       Include file:  Source\include\queue.h
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Coroutines:10.4.6
-      Source file:   Source\croutine.c
       Include file:  Source\include\croutine.h
+      Source file:   Source\croutine.c
 
    * Component: ARM.FreeRTOS::RTOS:Event Groups:10.4.6
       Source file:   Source\event_groups.c
@@ -188,8 +188,8 @@ Package Vendor: ONSemiconductor
       Source file:   Source\portable\MemMang\heap_4.c
 
    * Component: ARM.FreeRTOS::RTOS:Message Buffer:10.4.6
-      Source file:   Source\stream_buffer.c
       Include file:  Source\include\message_buffer.h
+      Source file:   Source\stream_buffer.c
 
    * Component: ARM.FreeRTOS::RTOS:Stream Buffer:10.4.6
       Include file:  Source\include\stream_buffer.h
@@ -203,19 +203,19 @@ Package Vendor: ONSemiconductor
 
    * Component: ONSemiconductor::Device:Bluetooth Core:BLE Abstraction:source:3.8.801
       Include file:  source\firmware\ble_abstraction_layer\ble\include\ble_gatt.h
-      Include file:  source\firmware\ble_abstraction_layer\ble\include\ble_l2c.h
       Include file:  source\firmware\ble_abstraction_layer\ble_profiles\include\ble_diss.h
-      Include file:  source\firmware\ble_abstraction_layer\ble_profiles\include\ble_hrps.h
       Source file:   source\firmware\ble_abstraction_layer\ble\source\ble_gap.c
       Include file:  source\firmware\ble_abstraction_layer\ble\include\ble_gap.h
+      Include file:  source\firmware\ble_abstraction_layer\ble\include\ble_l2c.h
+      Include file:  source\firmware\ble_abstraction_layer\ble_profiles\include\ble_hrps.h
       Source file:   source\firmware\ble_abstraction_layer\ble\source\ble_l2c.c
-      Include file:  source\firmware\ble_abstraction_layer\ble\include\msg_handler.h
-      Source file:   source\firmware\ble_abstraction_layer\ble\source\ble_gatt.c
       Source file:   source\firmware\ble_abstraction_layer\ble\source\msg_handler.c
       Include file:  source\firmware\ble_abstraction_layer\ble_profiles\include\ble_bass.h
       Source file:   source\firmware\ble_abstraction_layer\ble_profiles\source\ble_bass.c
-      Source file:   source\firmware\ble_abstraction_layer\ble_profiles\source\ble_hrps.c
       Source file:   source\firmware\ble_abstraction_layer\ble_profiles\source\ble_diss.c
+      Source file:   source\firmware\ble_abstraction_layer\ble_profiles\source\ble_hrps.c
+      Source file:   source\firmware\ble_abstraction_layer\ble\source\ble_gatt.c
+      Include file:  source\firmware\ble_abstraction_layer\ble\include\msg_handler.h
 
    * Component: ONSemiconductor::Device:Bluetooth Core:BLE Stack:release:3.8.801
       Library file:  lib\ble_core\Release\libblelib.a
@@ -228,8 +228,8 @@ Package Vendor: ONSemiconductor
       Library file:  lib\ble_profiles\Release\libbass.a
 
    * Component: ONSemiconductor::Device:Bluetooth Profiles:BLPS:release:3.8.801
-      Library file:  lib\ble_profiles\Release\libblps.a
       Include file:  include\ble\profiles\blps.h
+      Library file:  lib\ble_profiles\Release\libblps.a
 
    * Component: ONSemiconductor::Device:Bluetooth Profiles:DISS:release:3.8.801
       Include file:  include\ble\profiles\diss.h
@@ -241,61 +241,61 @@ Package Vendor: ONSemiconductor
 
    * Component: ONSemiconductor::Device:Libraries:Calibrate:source:3.8.801
       Include file:  include\rsl10_calibrate_clock.h
+      Source file:   source\firmware\calibratelib\code\rsl10_calibrate_power.c
+      Source file:   source\firmware\calibratelib\code\rsl10_calibrate.c
       Include file:  include\rsl10_calibrate_power.h
       Include file:  include\rsl10_calibrate.h
-      Source file:   source\firmware\calibratelib\code\rsl10_calibrate.c
-      Source file:   source\firmware\calibratelib\code\rsl10_calibrate_power.c
       Source file:   source\firmware\calibratelib\code\rsl10_calibrate_clock.c
 
    * Component: ONSemiconductor::Device:Libraries:System:source:3.8.801
-      Include file:  include\rsl10_romvect.h
       Include file:  include\rsl10_sys_clocks.h
-      Include file:  include\rsl10_sys_power.h
-      Include file:  include\rsl10_sys_rffe.h
-      Include file:  include\rsl10_sys_crc.h
-      Include file:  include\rsl10_sys_rtc.h
-      Include file:  include\rsl10_sys_flash.h
       Include file:  include\rsl10_sys_bbif.h
-      Include file:  include\rsl10_sys_gpio.h
-      Include file:  include\rsl10_sys_audio.h
+      Include file:  include\rsl10_sys_flash.h
+      Include file:  include\rsl10_sys_rtc.h
+      Include file:  include\rsl10_sys_audiosink.h
+      Include file:  include\rsl10_sys_power.h
+      Include file:  include\rsl10_protocol.h
+      Source file:   source\firmware\syslib\code\rsl10_romvect.c
+      Include file:  include\rsl10_sys_lpdsp32.h
       Include file:  include\rsl10_sys_i2c.h
-      Include file:  include\rsl10_sys_aes.h
-      Include file:  include\rsl10_sys_pwm.h
+      Include file:  include\rsl10_sys_crc.h
+      Include file:  include\rsl10_sys_ip.h
+      Include file:  include\rsl10_sys_adc.h
+      Include file:  include\rsl10_sys_gpio.h
+      Include file:  include\rsl10_sys_rffe.h
       Include file:  include\rsl10_sys_power_modes.h
       Include file:  include\rsl10_sys_asrc.h
-      Include file:  include\rsl10_sys_cm3.h
-      Include file:  include\rsl10_sys_adc.h
+      Include file:  include\rsl10_sys_audio.h
       Include file:  include\rsl10_sys_dio.h
       Include file:  include\rsl10_sys_dma.h
-      Include file:  include\rsl10_sys_audiosink.h
-      Include file:  include\rsl10_sys_ip.h
-      Include file:  include\rsl10_sys_lpdsp32.h
-      Include file:  include\rsl10_sys_pcm.h
-      Source file:   source\firmware\syslib\code\rsl10_sys_audio.c
-      Source file:   source\firmware\syslib\code\rsl10_romvect.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_crc.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_dma.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_version.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_rffe.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_adc.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_asrc.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_power_modes.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_flash.c
-      Include file:  include\rsl10_sys_timers.h
-      Include file:  include\rsl10_sys_watchdog.h
-      Include file:  include\rsl10_sys_uart.h
-      Include file:  include\rsl10_protocol.h
-      Source file:   source\firmware\syslib\code\rsl10_sys_timers.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_uart.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_power.c
-      Source file:   source\firmware\syslib\code\rsl10_sys_clocks.c
-      Source file:   source\firmware\syslib\code\rsl10_protocol.c
       Include file:  include\rsl10_sys_spi.h
+      Include file:  include\rsl10_romvect.h
+      Include file:  include\rsl10_sys_timers.h
+      Include file:  include\rsl10_sys_uart.h
+      Include file:  include\rsl10_sys_watchdog.h
+      Include file:  include\rsl10_sys_aes.h
+      Include file:  include\rsl10_sys_cm3.h
+      Include file:  include\rsl10_sys_pcm.h
+      Include file:  include\rsl10_sys_pwm.h
+      Source file:   source\firmware\syslib\code\rsl10_sys_timers.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_power.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_rffe.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_audio.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_adc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_crc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_asrc.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_dma.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_power_modes.c
+      Source file:   source\firmware\syslib\code\rsl10_protocol.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_flash.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_clocks.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_version.c
+      Source file:   source\firmware\syslib\code\rsl10_sys_uart.c
 
    * Component: ONSemiconductor::Device:Startup:source:3.8.801
+      Source file:   source\firmware\cmsis\source\ARM\startup_rsl10.s
       Include file:  source\firmware\drivers\RTE_config\RTE_Device.h
       Source file:   source\firmware\cmsis\source\system_rsl10.c
-      Source file:   source\firmware\cmsis\source\ARM\startup_rsl10.s
 Target not created.
 Build Time Elapsed:  00:00:02
 </pre>

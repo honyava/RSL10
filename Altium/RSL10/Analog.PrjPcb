@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-OutputPath=Project Outputs for Analog
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -106,7 +106,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=XJVQAIGG
+DocumentUniqueId=FBAFVUJN
 
 [Document5]
 DocumentPath=RSL10.OutJob
@@ -197,10 +197,6 @@ DocumentUniqueId=
 DocumentPath=Документация\.pdf
 DItemRevisionGUID=
 
-[GeneratedDocument2]
-DocumentPath=Документация\AnalogСБ.PcbDoc.pdf
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -248,7 +244,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for Analog
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

@@ -3,24 +3,6 @@
 uint16_t adc_buffer[ADC_BUFFER_SIZE];
 uint8_t uart_buffer[UART_BUFFER_SIZE];
 
-//void vTaskCode_ONE(void * pvParameters)
-//{
-//  for(;;)
-//  {
-//    Sys_GPIO_Toggle(LED_DIO); 
-//    vTaskDelay(5500 / portTICK_PERIOD_MS);
-//    
-//  }
-//}
-
-//void vTaskCode_TWO(void * pvParameters)
-//{
-//  for(;;)
-//  {
-//    Sys_GPIO_Toggle(LED_DIO); 
-//    vTaskDelay(1000 / portTICK_PERIOD_MS);
-//  }
-//}
 
 extern const struct DISS_DeviceInfo_t deviceInfo;
 /* ----------------------------------------------------------------------------
@@ -61,15 +43,6 @@ void vADCTask(void *pvParameters)
     }
 }
 
-void vUARTTask(void *pvParameters)
-{
-    for(;;)
-    {
-
-
-
-    }
-}
 
 
 int main(void)
@@ -99,18 +72,7 @@ int main(void)
 
     /* Reset the GAP manager. Trigger GAPM_CMP_EVT / GAPM_RESET when finished. See APP_GAPM_GATTM_Handler */
     GAPM_ResetCmd();
-  
-//    xTaskCreate(vTaskCode_ONE, "Task1", 50, NULL, 1, NULL);
-//    xTaskCreate(vTaskCode_TWO, "Task2", 50, NULL, 1, NULL);
-/////////////////////////////////////////////////////
-  
-  
-  
-  
-/////////////////////////////////////////////////////
-  
-//    vTaskStartScheduler();
-    int t = 0;
+
     while (1)
     {
       
