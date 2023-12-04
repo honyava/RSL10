@@ -1,0 +1,77 @@
+
+Importing C:\Users\retin\Desktop\My_Git\RSL10\Altium\RSL10\PDNAnalyzer_Output\Analog\Unnamed simulation (1)\odb.tgz... [Mon Dec  4 09:18:53 2023]
+============================================================
+Reading ODB++ database ...
+
+file not found: odb/misc/info.Z
+Reading file odb/matrix/matrix...
+Reading file odb/steps/pcb/profile...
+Reading file odb/steps/pcb/eda/data...
+Origin of ODB++ database:  Altium Designer file - Version 1.0.0.30000
+eda data: 13 packages, 26 nets.
+Reading file odb/steps/pcb/layers/top_solder/features...
+54 SWHs on layer TOP_SOLDER
+
+Reading file odb/steps/pcb/layers/top_layer/features...
+207 SWHs on layer TOP_LAYER
+
+Reading file odb/steps/pcb/layers/dielectric_1/features...
+0 SWHs on layer DIELECTRIC_1
+
+Reading file odb/steps/pcb/layers/bottom_layer/features...
+229 SWHs on layer BOTTOM_LAYER
+
+Reading file odb/steps/pcb/layers/bottom_solder/features...
+68 SWHs on layer BOTTOM_SOLDER
+
+Reading file odb/steps/pcb/layers/top_solder/attrlist...
+Reading file odb/steps/pcb/layers/top_layer/attrlist...
+Reading file odb/steps/pcb/layers/dielectric_1/attrlist...
+Reading file odb/steps/pcb/layers/bottom_layer/attrlist...
+Reading file odb/steps/pcb/layers/bottom_solder/attrlist...
+WARNING: material values were set to default due to missing information for the following layers:  'TOP_SOLDER', 'TOP_LAYER', 'DIELECTRIC_1', 'BOTTOM_LAYER', 'BOTTOM_SOLDER'
+parsing drills TOP_LAYER-BOTTOM_LAYER
+Reading file odb/steps/pcb/layers/drill_plated_bottom-top/features...
+Reading file odb/steps/pcb/layers/comp_+_top/components...
+Reading file odb/steps/pcb/layers/comp_+_bot/components...
+WARNING: different refdes prefixes in component group 10_ê: 
+	 C6
+	 L1
+	 C7
+INFO: 36 duplicate vertices ignored
+========================================
+INFO: Created CSV file (C:\Users\retin\Desktop\My_Git\RSL10\Altium\RSL10\PDNAnalyzer_Output\Analog\Unnamed simulation (1)\Results\tmp\design.csv) with component properties extracted from ODB++ file.
+========================================
+========================================
+Lumped-element import (C:\Users\retin\Desktop\My_Git\RSL10\Altium\RSL10\PDNAnalyzer_Output\Analog\Unnamed simulation (1)\Results\tmp\design.csv)...
+Detected ' ; ' as separator.
+
+Value-string translations:
+	0 ->  0.0 Ohms (R)
+	0,01ìê ->  10.0 fF (C)
+	0,1ìê ->  100.0 fF (C)
+	10 ->  10.0 Ohms (R)
+	100ê ->  100.0 Ohms (R)
+	100í ->  100.0 pF (C)
+	10Ì ->  10.0 Ohms (R)
+	10ê ->  10.0 Ohms (R)
+	10ìê ->  10.0 nH (L)
+	10ìê ->  10.0 pF (C)
+	10ï ->  10.0 pF (C)
+	1M ->  1.0 MOhms (R)
+	1Ì ->  1.0 Ohms (R)
+	1ìê ->  1.0 pF (C)
+	1í ->  1.0 pF (C)
+	220í ->  220.0 pF (C)
+	3,3ìê ->  3.3 pF (C)
+	33í ->  33.0 pF (C)
+	510ê ->  510.0 Ohms (R)
+WARNING: unphysical value: 0.0 Ohms
+WARNING: unable to interpret: DNP
+========================================
+WARNING: There were some warnings while importing the auto-generated CSV-file 'C:\Users\retin\Desktop\My_Git\RSL10\Altium\RSL10\PDNAnalyzer_Output\Analog\Unnamed simulation (1)\Results\tmp\design.csv'. Please review the auto-generated file under Parts Editor->Load (csv).
+========================================
+WARNING: renamed pins with the same name for component X1 from 0 to 0(1)
+Unifying library padstacks...
+Finished reading database.
+============================================================
