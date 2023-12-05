@@ -1,5 +1,5 @@
 
-Importing C:\Users\retin\Desktop\My_Git\RSL10\Altium\AntDig\AntDig\PDNAnalyzer_Output\AntDig\Unnamed simulation (1)\odb.tgz... [Mon Nov 27 18:41:56 2023]
+Importing C:\Users\retin\Desktop\My_Git\RSL10\Altium\AntDig\AntDig\PDNAnalyzer_Output\AntDig\Unnamed simulation (1)\odb.tgz... [Tue Dec  5 10:28:47 2023]
 ============================================================
 Reading ODB++ database ...
 
@@ -34,8 +34,8 @@ parsing drills TOP_LAYER-BOTTOM_LAYER
 Reading file odb/steps/pcb/layers/drill_plated_bottom-top/features...
 Reading file odb/steps/pcb/layers/comp_+_top/components...
 WARNING: unequal pin numbers in component group: 
-	 G1
 	 A1
+	 G1
 INFO: 20 duplicate vertices ignored
 ========================================
 INFO: Created CSV file (C:\Users\retin\Desktop\My_Git\RSL10\Altium\AntDig\AntDig\PDNAnalyzer_Output\AntDig\Unnamed simulation (1)\Results\tmp\design.csv) with component properties extracted from ODB++ file.

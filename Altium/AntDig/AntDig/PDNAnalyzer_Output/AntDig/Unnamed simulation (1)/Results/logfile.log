@@ -38,14 +38,14 @@ Check Topology
 Single ended nodes detected!
   5 high-resistance connections to gnd were inserted!
 Writing Results
-   No. Signal Capacitive Areas:      1362
+   No. Signal Capacitive Areas:      1284
    No. Reference Capacitive Areas:   0
-   No. Signal Inductive Segments:    2139
+   No. Signal Inductive Segments:    2052
    No. Reference Inductive Segments: 0
-   No. Via Inductive Segments:       71
+   No. Via Inductive Segments:       69
    No. Dielectric Elements:          0
-   No. Terminals:                    19
-Program pcbmerge has finished in 1 sec 
+   No. Terminals:                    11
+Program pcbmerge has finished in 0 sec 
 export3d - Version 2018.4 Build: 20180318
 export3d has started
 Reading neutral top data
@@ -56,8 +56,6 @@ Writing model
  Direct solver: time for allocating pre-conditioner was 0 sec 
  Direct solver: time for pre-conditioning was 0 sec 
  Direct solver: time for allocating solver was 0 sec 
- Direct solver: time for solving was 0 sec 
- Direct solver: time for deallocating matrix and solver memory was 0 sec 
  Direct solver: time for solving was 0 sec 
  Direct solver: time for deallocating matrix and solver memory was 0 sec 
  Direct solver: time for solving was 0 sec 
@@ -100,5 +98,5 @@ Unphysical voltage drop on IO side! Possible reasons:
 Kernel currcalc finished successfully in 0 sec 
 
  direct IR-Drop calculation done
-Kernel solverccd has finished in 1 sec 
+Kernel solverccd has finished in 0 sec 
 
