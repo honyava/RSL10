@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1536,864
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=147
-TXCnt=16
+NLCnt=146
+TXCnt=17
 
 [shapedef]
 Name=Battery
@@ -1219,6 +1219,7 @@ Pxs=360,424,376,424
 
 [Comp]
 Name=Resistor
+Enable=FALSE
 Px=1160,208
 Rot=1
 
@@ -1334,9 +1335,6 @@ Enable=FALSE
 
 [Wire]
 Pxs=256,368,272,368
-
-[Wire]
-Pxs=1160,144,1160,208
 
 [Comp]
 Name=TPS7A02_03
@@ -1625,6 +1623,14 @@ JustifyH=Left
 JustifyV=Bottom
 CBorder=None
 
+[Grid Text]
+Text="ldo"
+Px=1160,256
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
 [Schematic]
 CurrentSection 0=0
 CurrentSection 1=0
@@ -1633,7 +1639,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=0.66666666666666663
+Scale=1
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -1821,9 +1827,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=0,272
-Scale 3=0.66666666666666663
-Px=135,443
+SB 3=125,92
+Scale 3=1
+Px=720,308
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2208,8 +2214,23 @@ Locked=True
 EndPoint=ArrowF
 CBorder=#000080
 w=0
-AliasID1=5
+AliasID1=6
 w2=0
+AliasID2=6
+Pos=4.1245999999997123,0.98292763111753345,3.6395999999997102,0.81739220822560199
+Posm=4.1966759002770084
+Font=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
+Format=3
+
+[AObject]
+Analysis=Transient
+Object=MeasureV
+Locked=True
+EndPoint=ArrowF
+CBorder=#000080
+w=1
+AliasID1=5
+w2=1
 AliasID2=5
 Pos=2.2645999999998616,7.0231519478967735e-006,2.7775999999998051,7.022930097206889e-006
 Posm=2.3370319001386965
@@ -2342,9 +2363,9 @@ Object=MeasureH
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=0
+w=1
 AliasID1=5
-w2=0
+w2=1
 AliasID2=5
 Pos=47.994599999978853,0.99989910267160775,48.500599999977673,0.99990213102655034
 Posm=0.99988416264804625
@@ -2357,9 +2378,9 @@ Object=MeasureH
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=0
+w=1
 AliasID1=5
-w2=0
+w2=1
 AliasID2=5
 Pos=1.2505999999999733,1.0000025007180222,2.2585999999998623,1.0000023558015743
 Posm=0.99998496894409961
@@ -2372,9 +2393,9 @@ Object=MeasureV
 Locked=True
 EndPoint=ArrowF
 CBorder=#000080
-w=0
+w=1
 AliasID1=5
-w2=0
+w2=1
 AliasID2=5
 Pos=1.044599999999996,0.58808522820969511,0.93560000000000076,0.58623876960913834
 Posm=1.055586749017406
@@ -2819,7 +2840,7 @@ YRng=1.05,0.8
 Options=LINEARX,LINEARY
 Range Grid X=2
 Range Grid Y=0.05
-Enable=DontRun
+Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -2923,7 +2944,7 @@ YRng=1.80213,1.80213
 Options=LINEARX,LINEARY
 Range Grid X=2
 Range Grid Y=3e-8
-Enable=Enable
+Enable=DontRun
 Line Color=#FF00FF
 Text Color=#FF00FF
 Rainbow=False
