@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=NetDA1_44 Pin=G1-1
+Removed Pin From Net: NetName=GND Pin=G1-2
+Removed Pin From Net: NetName=NetDA1_43 Pin=G1-3
+Removed Pin From Net: NetName=GND Pin=G1-4
+Removed Member From Class: ClassName=AntDig Member=G1
+Change Designator: Invalid Designator
+Change Component Designator: OldDesignator=X2 NewDesignator=XS1
+Change Component Kind : Designator=A1 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=X1 Old Kind=Standard New Kind=Standard (No BOM)
+Change component parameters: Designator = "DA1" ("DA1"); Footprint = "RSL10"; UniqueID = "\WUTJKQZG" ("\WUTJKQZG")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = "NCH-RSL10"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1" ("L1"); Footprint = "IND0402"; UniqueID = "\FLULTOOB" ("\FLULTOOB")
+Change component parameters (AddParameter): Name = "Name"; Value = "??????? ?????????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "MLG1005S0N4BTD25"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0,4?"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2" ("L2"); Footprint = "IND0402"; UniqueID = "\JLLNZPFJ" ("\JLLNZPFJ")
+Change component parameters (AddParameter): Name = "Name"; Value = "??????? ?????????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "LQG15HN1N8S02D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1,8?"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L3" ("L3"); Footprint = "IND0402"; UniqueID = "\UHFBPKNW" ("\UHFBPKNW")
+Change component parameters (AddParameter): Name = "Name"; Value = "??????? ?????????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "LQG15HS3N0S02D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = "??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3?"; VariantName = "[No Variations]"
+Added Component: Designator=ZQ1(XTAL32)
+Add component (AddParameter): Name = "Parameter 1"; Value = "48MHz"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDA1_44 Pin=ZQ1-1
+Added Pin To Net: NetName=NetDA1_43 Pin=ZQ1-2
+Change Net Name : Old Net Name=NetR1_2 New Net Name=Net_1
+Change Net Name : Old Net Name=NetR2_2 New Net Name=Net_2
+Change Net Name : Old Net Name=NetR3_2 New Net Name=Net_3
+Added Member To Class: ClassName=AntDig Member=Component R3 68
+Added Member To Class: ClassName=AntDig Member=Component R4 68
+Added Member To Class: ClassName=AntDig Member=Component ZQ1 ??????????? ??? ??????
+Added Room: Name=AntDig

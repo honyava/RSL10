@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GND Pin=X2-Neg
+Removed Pin From Net: NetName=NetC2_2 Pin=X2-Pos
+Removed Member From Class: ClassName=Analog Member=X2
+Change Component Designator: OldDesignator=X1 NewDesignator=XT1
+Change component parameters: Designator = "DA2" ("DA2"); Footprint = "ADS7142IRUGT"; UniqueID = "\AWIZXQPX" ("\AWIZXQPX")
+Change component parameters (AddParameter): Name = "main_name"; Value = "ADS7142IRUGT"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R13" ("R13"); Footprint = "RES0402"; UniqueID = "\QEJWQAPK" ("\QEJWQAPK")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "????.434110.005??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "name_main"; Value = "?1-12-0,1-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nameSuf"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Units"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=XS1(Battery)
+Add component (AddParameter): Name = "manufacture"; Value = "????.430420.014??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name"; Value = "???????"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "name_main"; Value = "KLS5-CR2032"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC2_2 Pin=XS1-1
+Added Pin To Net: NetName=GND Pin=XS1-2
+Added Member To Class: ClassName=Analog Member=Component XS1 KLS5-CR2032????.430420.014??
