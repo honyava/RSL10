@@ -27,7 +27,7 @@
                                 OutputMedium1_Type=Publish
                                 
 OutputType1=Assembly
-                            OutputName1=  Лист 1
+                            OutputName1= BOAS PcbPrint ???? 1
                             OutputCategory1=Assembly
                             OutputDocumentPath1=Analog.PcbDoc
                             OutputVariantName1=
@@ -36,7 +36,7 @@ OutputType1=Assembly
                             OutputDefault1=0
                             PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=A0
                             Configuration1_Name1=OutputConfigurationParameter1
-                            Configuration1_Item1=DesignatorDisplayMode=Physical|PrintArea=SpecificArea|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=883070867|PrintAreaUpperRightCornerX=165354330|PrintAreaUpperRightCornerY=1000000000|Record=PcbPrintView
+                            Configuration1_Item1=DesignatorDisplayMode=Physical|PrintArea=SpecificArea|PrintAreaLowerLeftCornerX=-393700|PrintAreaLowerLeftCornerY=883070867|PrintAreaUpperRightCornerX=165354330|PrintAreaUpperRightCornerY=1000393700|Record=PcbPrintView
                             Configuration1_Name2=OutputConfigurationParameter2
                             Configuration1_Item2=IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=False|Index=0|Mirror=False|Name=Draft_First|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False
                             Configuration1_Name3=OutputConfigurationParameter3
@@ -53,11 +53,11 @@ OutputType1=Assembly
                             Configuration1_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|DDSymbolKind=0|DDSymbolSize=200000|DDSymbolSortKind=0|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer
                             PcbPrintPreferences1=SubsititueFont_Default=True|SubsititueFont_Serif=True|SubsititueFont_SansSerif=True|PrintKeepOuts=False|NetColorOverride=True|PrintPositivePlaneLayers=False|V7_C0.Name=Mechanical Layer 7|V7_C0.Value=0|V7_C1.Name=Mechanical Layer 8|V7_C1.Value=16777215|V7_C2.Name=Mechanical Layer 9|V7_C2.Value=0|V7_C3.Name=Mechanical Layer 11|V7_C3.Value=16777215|V7_C4.Name=Mechanical Layer 12|V7_C4.Value=0|V7_C5.Name=Mechanical Layer 13|V7_C5.Value=0
 [PublishSettings]
-                                OutputFileName1=1.pdf
+                                OutputFileName1=Analog.PcbDoc1.pdf
                                 ReleaseManaged1=0
                                 OpenOutput1=0
                                 PromptOverwrite1=0
-                                OutputBasePath1=C:\Users\retin\AppData\Local\Temp\
+                                OutputBasePath1=C:\Users\reting\AppData\Local\Temp\
                                 OutputPathMedia1=
                                 OutputPathMediaValue1=
                                 PromptOverwrite1=0
