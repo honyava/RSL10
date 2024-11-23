@@ -1,1 +1,2 @@
-Record=TopLevelDocument|FileName=Analog_Digital_struct.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=Analog_Digital_Princ.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Analog_Digital_Princ.SchDoc|FileName=Analog_Digital_struct.SchDoc|SheetNumber=1
